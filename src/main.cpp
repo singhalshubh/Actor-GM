@@ -25,6 +25,9 @@ extern "C" {
 
 #include "graph.h"
 #include "match.h"
+#include "verify.h"
+
+#define VERIFY 1
 
 int main(int argc, char *argv[]) {
     static long lock = 0;
@@ -48,6 +51,11 @@ int main(int argc, char *argv[]) {
         match m;
         m.init(g);
         m.matching(g);
+        #if VERIFY
+            graph g_verify;
+            g_verify.init(filename);
+            verify(g_verify, m.final_set);
+        #endif
     });
     lgp_finalize();
     return EXIT_SUCCESS;

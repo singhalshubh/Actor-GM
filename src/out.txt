@@ -1,0 +1,13 @@
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 5.043 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
+Number of Vertices: 3072441
+Number of Edges: 234370166
+Sorting el for all G(V) takes 0.021 seconds
+Time taken for matching: 0.828
+Matching Size: 1323843
+Reading file takes 0.630 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
+Number of Vertices: 3072441
+Number of Edges: 234370166
+Sorting el for all G(V) takes 0.021 seconds
