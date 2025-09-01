@@ -62,11 +62,11 @@ class MatchSelector: public hclib::Selector<3, matchPkt> {
     std::vector<EDGE> &storage;
     std::vector<std::pair<VERTEX, VERTEX>> &final_set;
 
-    void reject_storage(VERTEX ll_u, VERTEX u, int mb) {
+    void reject_storage(VERTEX ll_u, VERTEX u) {
         if(storage[ll_u].second != -1) {
             matchPkt rj(storage[ll_u].first, u, storage[ll_u].second);
             rj.type = comm::reject;
-            send(mb, rj, g._owner(rj.u));
+            send(2, rj, g._owner(rj.u));
             storage[ll_u].second = -1;
         }
     }
@@ -77,21 +77,21 @@ class MatchSelector: public hclib::Selector<3, matchPkt> {
             VERTEX ll_v = g._to_local(pkt.v);
             if(status[ll_v] == state::done) {
                 pkt.type = comm::reject;
-                send(1, pkt, g._owner(pkt.u));
+                send(2, pkt, g._owner(pkt.u));
             }
             else {
                 EDGE mate_edge = find_mate(g, ll_v);
                 if(mate_edge.second == -1) {
                     pkt.type = comm::reject;
-                    send(1, pkt, g._owner(pkt.u));
-                    reject_storage(ll_v, pkt.v, 1);
+                    send(2, pkt, g._owner(pkt.u));
+                    reject_storage(ll_v, pkt.v);
                     status[ll_v] = state::done;
                 }
                 else if(mate_edge.first == pkt.u) {
                     pkt.type = comm::accept;
                     send(1, pkt, g._owner(pkt.u));
                     if(storage[ll_v].first != pkt.u) {
-                        reject_storage(ll_v, pkt.v, 1);
+                        reject_storage(ll_v, pkt.v);
                     }
                     else {
                         storage[ll_v].second = -1;
@@ -100,13 +100,13 @@ class MatchSelector: public hclib::Selector<3, matchPkt> {
                 }
                 else {
                     if(storage[ll_v].second < pkt.w || (storage[ll_v].second == pkt.w && storage[ll_v].first > pkt.u)) {
-                        reject_storage(ll_v, pkt.v, 1);
+                        reject_storage(ll_v, pkt.v);
                         storage[ll_v].first = pkt.u;
                         storage[ll_v].second = pkt.w;
                     }
                     else {
                         pkt.type = comm::reject;
-                        send(1, pkt, g._owner(pkt.u));
+                        send(2, pkt, g._owner(pkt.u));
                     }
                 }
             }
@@ -114,7 +114,7 @@ class MatchSelector: public hclib::Selector<3, matchPkt> {
         else if(pkt.type == comm::accept) {
             VERTEX ll_v = g._to_local(pkt.v);
             if(storage[ll_v].first != pkt.u) {
-                reject_storage(ll_v, pkt.v, 1);
+                reject_storage(ll_v, pkt.v);
             }
             else {
                 storage[ll_v].second = -1;
@@ -124,30 +124,25 @@ class MatchSelector: public hclib::Selector<3, matchPkt> {
         }
     }
     void reply(matchPkt pkt, int sender_rank) {
+        assert(pkt.type == comm::accept);
         VERTEX ll_u = g._to_local(pkt.u);
-        if(pkt.type == comm::accept) {
-            status[ll_u] = state::done;
-            if(storage[ll_u].first != pkt.v) {
-                reject_storage(ll_u, pkt.u, 2);
-            }
-            else {
-                storage[ll_u].second = -1;
-            }
-            final_set.push_back(std::make_pair(pkt.u, pkt.v));
+        status[ll_u] = state::done;
+        if(storage[ll_u].first != pkt.v) {
+            reject_storage(ll_u, pkt.u);
         }
-        else if(pkt.type == comm::reject) {
-            status[ll_u] = state::init;
-            assert(find_mate(g, ll_u).first == pkt.v);
-            g.adj[ll_u].pop_back();
+        else {
+            storage[ll_u].second = -1;
         }
+        final_set.push_back(std::make_pair(pkt.u, pkt.v));
     }
 
-    void reject(matchPkt pkt, int sender_rank) {
+    void reject(matchPkt pkt, int) {
         VERTEX ll_u = g._to_local(pkt.u);
-        assert(pkt.type == comm::reject);
+        if (status[ll_u] == state::done) return;
         status[ll_u] = state::init;
-        assert(find_mate(g, ll_u).first == pkt.v);
-        g.adj[ll_u].pop_back();
+        if (!g.adj[ll_u].empty() && g.adj[ll_u].back().first == pkt.v) {
+            g.adj[ll_u].pop_back();
+        }
     }
 
 public:
@@ -176,7 +171,7 @@ void match::matching(graph &g) {
                     if(storage[ll_u].second != -1) {
                         matchPkt rj(storage[ll_u].first, g._to_global(ll_u), storage[ll_u].second);
                         rj.type = comm::reject;
-                        matchSelector->send(1, rj, g._owner(rj.u));
+                        matchSelector->send(2, rj, g._owner(rj.u));
                         storage[ll_u].second = -1;
                     }
                     continue;
@@ -211,8 +206,6 @@ void match::matching(graph &g) {
         if(lgp_reduce_add_l(should_terminate) == 0) {
             break;
         }
-        uint64_t total_size_matching = lgp_reduce_add_l(final_set.size());
-        T0_fprintf(stderr, "Matching Size: %ld\n", total_size_matching/2);
     }
     T0_fprintf(stderr, "Time taken for matching: %.3f\n", wall_seconds() - t1);
     uint64_t total_size_matching = lgp_reduce_add_l(final_set.size());
