@@ -7,6 +7,7 @@ extern "C" {
 #include <string>
 #include <vector>
 #include <queue>
+#include <unordered_map>
 #include <fstream>
 #include <sys/stat.h>
 #include "selector.h"
