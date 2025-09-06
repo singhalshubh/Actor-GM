@@ -80,7 +80,6 @@ bool _find_edge(VERTEX u, VERTEX v, graph &g) {
 }
 
 void verify(graph &g, std::vector<std::pair<VERTEX, VERTEX>> &final_set) {
-    T0_fprintf(stderr, "########## Verification ##########\n");
     double t1 = wall_seconds();
     std::unordered_map<VERTEX, VERTEX> unique_u;
     std::unordered_map<VERTEX, VERTEX> unique_v;
@@ -98,6 +97,8 @@ void verify(graph &g, std::vector<std::pair<VERTEX, VERTEX>> &final_set) {
     delete verifySelector;
     assert(unique_u.size() == unique_v.size());
     assert(collection.size() == 2 * unique_u.size());
+    T0_fprintf(stderr, "Matching Size: %ld\n", unique_u.size());
+    T0_fprintf(stderr, "########## Verification ##########\n");
     T0_fprintf(stderr, "########## Step 1, unique matchings asserted ##########\n");
     for (const auto &edge : unique_u) {
         assert(_find_edge(edge.first, edge.second, g));

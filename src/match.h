@@ -208,7 +208,4 @@ void match::matching(graph &g) {
         }
     }
     T0_fprintf(stderr, "Time taken for matching: %.3f\n", wall_seconds() - t1);
-    uint64_t total_size_matching = lgp_reduce_add_l(final_set.size());
-    //assert(total_size_matching % 2 == 0);
-    T0_fprintf(stderr, "Matching Size: %ld\n", total_size_matching/2);
 }
