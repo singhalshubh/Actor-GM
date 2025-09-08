@@ -32,7 +32,7 @@ class graph {
 void graph::init(std::string filename) {
     std::ifstream file(filename);
     std::string line;
-    getline(file, line); 
+    getline(file, line);
     assert(line[0] == '%');
     getline(file, line); 
     std::stringstream ss(line);

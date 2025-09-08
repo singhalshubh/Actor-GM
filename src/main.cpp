@@ -28,7 +28,7 @@ extern "C" {
 #include "match.h"
 #include "verify.h"
 
-#define VERIFY 1
+#define VERIFY 0
 
 int main(int argc, char *argv[]) {
     static long lock = 0;

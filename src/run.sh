@@ -1,14 +1,12 @@
-#!/bin/bash
-#SBATCH -A gts-vsarkar9-forza
-#SBATCH --ntasks-per-node=16
-#SBATCH -N 32
-#SBATCH -t3:00:00
-#SBATCH -qinferno
-#SBATCH --mem-per-cpu=12gb
+datasets=("cage15.mtx" "HV15R.mtx" "graph500-scale21-ef16_adj.mtx" "graph500-scale22-ef16_adj.mtx" "graph500-scale23-ef16_adj.mtx" "graph500-scale24-ef16_adj.mtx" "kmer_P1a.mtx" "kmer_U1a.mtx" "kmer_V1r.mtx" "kmer_V2a.mtx" "static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx" "static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx" "static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx" "com-Orkut.mtx" "com-Friendster.mtx")
+cores=(4 8 16 32 64 128)
 
-echo "Started on `/bin/hostname`"   # prints name of compute node job was started on
-cd $SLURM_SUBMIT_DIR 
+d_path=/storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted
 
-source oshmem-slurm.sh
-cd /storage/home/hcoda1/8/ssinghal74/r-vsarkar9-1/Actor-GM/src
-srun -N 32 -n 512 ./main -f ~/scratch/mel-dataset/converted/kmer_V1r.mtx
+for ds in "${datasets[@]}"; do
+  for c in "${cores[@]}"; do
+    echo "== $ds | $c cores =="
+    srun -N $c -n $((16*c)) ./main -f $d_path/$ds
+    echo -e '\n'
+  done
+done
