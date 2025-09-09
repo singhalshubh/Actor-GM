@@ -11,6 +11,9 @@
 #include <utility>
 #include <cstring>
 #include <cassert>
+#include <limits>
+#include <cmath>
+#include <algorithm>
 
 #define MATE_REQUEST 1
 #define MATE_REJECT 2 
@@ -23,19 +26,20 @@ enum class state {
     done = 2
 };
 
-// TODO FIXME change comm_world to comm_
-
 class MaxEdgeMatchRMAFix
 {
     public:
         MaxEdgeMatchRMAFix(Graph* g): 
-            g_(g), D_(0), M_(0), status(nullptr),
-            qbuf_(nullptr), ghost_count_(nullptr),
+            g_(g), D_(0), M_(0), status(nullptr), ghost_count_(nullptr),
             nghosts_(0), nghosts_indices_(0), rdispls_(0),
-            scounts_(0), rcounts_(0), prcounts_(0),
-            storage_vertex(nullptr), storage_weight(nullptr),
-            win_(MPI_WIN_NULL), wbuf_(nullptr)
+            storage_vertex(nullptr), storage_weight(nullptr)
         {
+            for (int m=0; m < 3; m++) { 
+                qbuf_[m] = nullptr; 
+                wbuf_[m] = nullptr; 
+                win_[m] = MPI_WIN_NULL;
+            }
+
             MPI_Comm_size(MPI_COMM_WORLD, &size_);
             MPI_Comm_rank(MPI_COMM_WORLD, &rank_);
 
@@ -75,34 +79,55 @@ class MaxEdgeMatchRMAFix
                 tot_ghosts += ghost_count_[i];
             }
 
-            nelems_ = tot_ghosts*2*3;
-            qbuf_ = new GraphElem[nelems_];
+            nelems_ = tot_ghosts*1*3;
+            for (int m = 0; m < 3; ++m)
+                qbuf_[m] = new GraphElem[nelems_];
             GraphElem disp = 0;
             for (int p = 0; p < size_; p++)
             {
                 nghosts_indices_[p] = disp;
-                disp += nghosts_[p]*2*3;
+                disp += nghosts_[p]*1*3;
             }
             MPI_Alltoall(nghosts_indices_.data(), 1, MPI_GRAPH_TYPE, 
                     rdispls_.data(), 1, MPI_GRAPH_TYPE, MPI_COMM_WORLD);
             
-            scounts_.resize(size_, 0);
-            rcounts_.resize(size_, 0);
-            prcounts_.resize(size_, 0);
+            for (int m = 0; m < 3; ++m) {
+                scounts_[m].assign(size_, 0);
+                rcounts_[m].assign(size_, 0);
+                prcounts_[m].assign(size_, 0);
+            }
         }
         
         void create_mpi_win()
         {
-            MPI_Win_allocate(nelems_*sizeof(GraphElem), sizeof(GraphElem), 
-                    MPI_INFO_NULL, MPI_COMM_WORLD, &wbuf_, &win_);             
-            MPI_Win_lock_all(MPI_MODE_NOCHECK, win_);
+            for (int m = 0; m < 3; ++m) {
+                wbuf_[m] = nullptr;
+                win_[m]  = MPI_WIN_NULL;
+
+                MPI_Win_allocate(
+                    nelems_ * sizeof(GraphElem),
+                    sizeof(GraphElem),
+                    MPI_INFO_NULL,
+                    MPI_COMM_WORLD,
+                    &wbuf_[m],
+                    &win_[m]);
+
+                MPI_Win_lock_all(MPI_MODE_NOCHECK, win_[m]);
+            }
         }
 
-        void destroy_mpi_win() 
-        {             
-            MPI_Win_unlock_all(win_);
-            MPI_Win_free(&win_); 
+        void destroy_mpi_win()
+        {
+            for (int m = 0; m < 3; ++m) {
+                if (win_[m] != MPI_WIN_NULL) {
+                    MPI_Win_unlock_all(win_[m]);
+                    MPI_Win_free(&win_[m]);
+                    win_[m] = MPI_WIN_NULL;
+                    wbuf_[m] = nullptr;
+                }
+            }
         }
+
 
         ~MaxEdgeMatchRMAFix() {}
 
@@ -111,27 +136,37 @@ class MaxEdgeMatchRMAFix
             M_.clear();
             D_.clear();
             
-            delete []qbuf_;
-            delete []ghost_count_;
-            delete []status;
-            delete []storage_vertex;
-            delete []storage_weight;
+            for (int m = 0; m < 3; ++m) {
+                delete [] qbuf_[m];
+                qbuf_[m] = nullptr;
+            }
+
+            delete [] ghost_count_;
+            ghost_count_ = nullptr;
+
+            delete [] status;
+            status = nullptr;
+
+            delete [] storage_vertex;
+            storage_vertex = nullptr;
+
+            delete [] storage_weight;
+            storage_weight = nullptr;
 
             rdispls_.clear();
-            rcounts_.clear();
-            prcounts_.clear();
-            scounts_.clear();
             nghosts_.clear();
             nghosts_indices_.clear();
+
+            for (int m = 0; m < 3; ++m) {
+                rcounts_[m].clear();
+                prcounts_[m].clear();
+                scounts_[m].clear();
+            }
+
         }
        
         inline bool is_same(GraphWeight a, GraphWeight b) 
         { return std::abs(a - b) <= std::numeric_limits<GraphWeight>::epsilon(); }
-
-        struct DirRec {
-            GraphElem a, b;
-            unsigned char dir;
-        };
 
         void print_M() const
         {
@@ -217,21 +252,17 @@ class MaxEdgeMatchRMAFix
         }
 
         // initiate put
-        void Put(int tag, int target, GraphElem data[2])
-        {
-            assert(data[0] != (GraphElem)-1 && data[1] != (GraphElem)-1);
-            assert(target >= 0 && target < size_);
-            const GraphElem cap = nghosts_[target]*2*3;
-            assert(scounts_[target] + 3 <= cap);
-            const GraphElem index = nghosts_indices_[target] + scounts_[target];
+        void Put(int tag, int target, GraphElem data[2]) {
+            const int m = (tag == MATE_ACCEPT) ? 1 : (tag == MATE_REJECT ? 2 : 0);
+            const GraphElem index = nghosts_indices_[target] + scounts_[m][target];
+            const GraphElem tdisp = rdispls_[target]  + scounts_[m][target];
+            qbuf_[m][index + 0] = data[0];
+            qbuf_[m][index + 1] = data[1];
+            qbuf_[m][index + 2] = tag;
+            MPI_Put(&qbuf_[m][index], 3, MPI_GRAPH_TYPE, target,
+                    (MPI_Aint)tdisp, 3, MPI_GRAPH_TYPE, win_[m]);
 
-            qbuf_[index] = data[0];
-            qbuf_[index + 1] = data[1];
-            qbuf_[index + 2] = tag;
-            GraphElem tdisp = rdispls_[target] + scounts_[target];
-            MPI_Put(&qbuf_[index], 3, MPI_GRAPH_TYPE, target, 
-                    (MPI_Aint)tdisp, 3, MPI_GRAPH_TYPE, win_);
-            scounts_[target] += 3;
+            scounts_[m][target] += 3;
         }
 
         void compute_mate(const GraphElem ll_v, Edge& max_edge) {
@@ -244,7 +275,7 @@ class MaxEdgeMatchRMAFix
                         max_edge = edge.edge_;
 
                     if (is_same(edge.edge_.weight_, max_edge.weight_))
-                        if (edge.edge_.tail_ > max_edge.tail_)
+                        if (edge.edge_.tail_ < max_edge.tail_)
                             max_edge = edge.edge_;
                 }
             }
@@ -253,7 +284,6 @@ class MaxEdgeMatchRMAFix
         inline void deactivate_edge(GraphElem x, GraphElem y) {
             GraphElem e0, e1;
             const GraphElem lx = g_->global_to_local(x);
-            const int y_owner = g_->get_owner(y);
             g_->edge_range(lx, e0, e1);
             for (GraphElem e = e0; e < e1; e++) {
                 EdgeActive& edge = g_->get_active_edge(e);
@@ -280,38 +310,37 @@ class MaxEdgeMatchRMAFix
             return -1;
         }
 
-        void process_window(int mode)
-        {
-            MPI_Win_flush_all(win_);
+        void process_window(int mode) {
+
+            MPI_Win_flush_all(win_[mode]);
             MPI_Barrier(MPI_COMM_WORLD);
-            MPI_Alltoall(scounts_.data(), 1, MPI_GRAPH_TYPE, 
-                    rcounts_.data(), 1, MPI_GRAPH_TYPE, MPI_COMM_WORLD);
-            
-            
-            for (int k = 0; k < size_; k++) {
+
+            MPI_Alltoall(scounts_[mode].data(), 1, MPI_GRAPH_TYPE,
+                        rcounts_[mode].data(), 1, MPI_GRAPH_TYPE, MPI_COMM_WORLD);
+
+            for (int k = 0; k < size_; ++k) {
                 const GraphElem index = nghosts_indices_[k];
-                const GraphElem start = prcounts_[k];
-                const GraphElem end = rcounts_[k];
-                
-                for (int i = start; i < end; i+=3) {
-                    if(mode == 0) {
-                        pull_mb0(wbuf_[index+i], wbuf_[index+i+1], wbuf_[index+i+2]);
-                    }
-                    else if(mode == 1) {
-                        if(wbuf_[index+i+2] == MATE_ACCEPT) {
-                            pull_accept(wbuf_[index+i], wbuf_[index+i+1], wbuf_[index+i+2]);
-                        }
-                    }
-                    else if(mode == 2) {
-                        if(wbuf_[index+i+2] == MATE_REJECT) {
-                            pull_reject(wbuf_[index+i], wbuf_[index+i+1], wbuf_[index+i+2]);
-                        }
+                const GraphElem start = prcounts_[mode][k];
+                const GraphElem end   = rcounts_[mode][k];
+
+                for (GraphElem i = start; i < end; i += 3) {
+                    const GraphElem u   = wbuf_[mode][index + i + 0];
+                    const GraphElem v   = wbuf_[mode][index + i + 1];
+                    int tag = wbuf_[mode][index + i + 2];
+
+                    if (mode == 0) {
+                        if (tag == MATE_REQUEST || tag == MATE_ACCEPT_D)
+                            pull_mb0(u, v, tag);
+                    } else if (mode == 1) {
+                        if (tag == MATE_ACCEPT)
+                            pull_accept(u, v, tag);
+                    } else {
+                        if (tag == MATE_REJECT)
+                            pull_reject(u, v, tag);
                     }
                 }
-                if(mode == 2) {
-                    prcounts_[k] = rcounts_[k];
-                    rcounts_[k] = 0;
-                }
+                prcounts_[mode][k] = rcounts_[mode][k];
+                rcounts_[mode][k] = 0;
             }
         }
 
@@ -434,7 +463,7 @@ class MaxEdgeMatchRMAFix
                     assert(status[ll_u] == state::init);
                     Edge mate_edge;
                     compute_mate(ll_u, mate_edge); 
-                    // std::cout << g_->local_to_global(ll_u) << "-->" << mate_edge.tail_ << std::endl;
+                    //std::cout << g_->local_to_global(ll_u) << "-->" << mate_edge.tail_ << std::endl;
                     if(mate_edge.tail_ == (GraphElem)-1) {
                         status[ll_u] = state::done;
                         reject_storage(ll_u);
@@ -466,7 +495,8 @@ class MaxEdgeMatchRMAFix
                 process_window(0);
                 process_window(1);
                 process_window(2);
-                MPI_Barrier(MPI_COMM_WORLD);   
+                MPI_Barrier(MPI_COMM_WORLD);
+
                 int count = 0;
                 for(GraphElem ll_u = 0; ll_u < g_->get_lnv(); ll_u++) {
                     if(status[ll_u] != state::done) {
@@ -476,9 +506,9 @@ class MaxEdgeMatchRMAFix
                 }    
                 MPI_Allreduce(MPI_IN_PLACE, &count, 1, MPI_GRAPH_TYPE, 
                         MPI_SUM, MPI_COMM_WORLD);
-                if(rank_ == 0) std::cout << count << std::endl;
+
                 if (count == 0)
-                    break; 
+                    break;
             }
         } 
 
@@ -491,12 +521,13 @@ class MaxEdgeMatchRMAFix
         GraphWeight *storage_weight;
         GraphElem nelems_;
         GraphElem *ghost_count_; 
-        GraphElem *qbuf_; 
-        GraphElem *countp_;
+        GraphElem* qbuf_[3]; 
         std::vector<GraphElem> nghosts_, nghosts_indices_, rdispls_;
-        std::vector<GraphElem> scounts_, rcounts_, prcounts_;
-        GraphElem *wbuf_;
-        MPI_Win win_;
+        std::vector<GraphElem> scounts_[3];
+        std::vector<GraphElem> rcounts_[3];
+        std::vector<GraphElem> prcounts_[3];
+        GraphElem* wbuf_[3];
+        MPI_Win win_[3];
         int rank_, size_;
 };
 
