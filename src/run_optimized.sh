@@ -8,7 +8,7 @@ for ds in "${datasets[@]}"; do
     echo "== $ds | $c cores =="
 
     # run each job with a 10-minute (600s) timeout
-    if ! timeout 300 srun -N $c -n $((16*c)) ./main -f $d_path/$ds; then
+    if ! timeout 300 srun -N $c -n $((16*c)) ./main_optimized -f $d_path/$ds; then
       echo "$ds on $c cores did not finish within 5 minutes, skipping..."
     fi
 

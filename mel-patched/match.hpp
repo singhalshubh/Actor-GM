@@ -15,6 +15,8 @@
 #include <cmath>
 #include <algorithm>
 
+#define VERIFY 0
+
 #define MATE_REQUEST 1
 #define MATE_REJECT 2 
 #define MATE_ACCEPT 3
@@ -23,7 +25,7 @@
 enum class state {
     init = 0,
     waiting = 1,
-    done = 2
+    done = 2,
 };
 
 class MaxEdgeMatchRMAFix
@@ -247,7 +249,9 @@ class MaxEdgeMatchRMAFix
         std::vector<EdgeTuple> const& operator()()
         {
             maxematch_rma();
-            print_M();
+            #if VERIFY
+                print_M();
+            #endif
             return M_;
         }
 
@@ -314,6 +318,7 @@ class MaxEdgeMatchRMAFix
 
             MPI_Win_flush_all(win_[mode]);
             MPI_Barrier(MPI_COMM_WORLD);
+            MPI_Win_sync(win_[mode]);
 
             MPI_Alltoall(scounts_[mode].data(), 1, MPI_GRAPH_TYPE,
                         rcounts_[mode].data(), 1, MPI_GRAPH_TYPE, MPI_COMM_WORLD);
@@ -356,6 +361,7 @@ class MaxEdgeMatchRMAFix
                     else {
                         Put(MATE_REJECT, g_->get_owner(u), pkt);
                     } 
+                    deactivate_edge(v, u);
                 }
                 else {
                     Edge mate_edge;
@@ -367,6 +373,7 @@ class MaxEdgeMatchRMAFix
                         else {
                             Put(MATE_REJECT, g_->get_owner(u), pkt); 
                         }
+                        deactivate_edge(v, u);
                         reject_storage(ll_v);
                         status[ll_v] = state::done;
                     }
@@ -399,6 +406,7 @@ class MaxEdgeMatchRMAFix
                             else {
                                 Put(MATE_REJECT, g_->get_owner(u), pkt);
                             } 
+                            deactivate_edge(v, u);
                         }
                     }
                 }
@@ -496,7 +504,6 @@ class MaxEdgeMatchRMAFix
                 process_window(1);
                 process_window(2);
                 MPI_Barrier(MPI_COMM_WORLD);
-
                 int count = 0;
                 for(GraphElem ll_u = 0; ll_u < g_->get_lnv(); ll_u++) {
                     if(status[ll_u] != state::done) {
@@ -506,6 +513,7 @@ class MaxEdgeMatchRMAFix
                 }    
                 MPI_Allreduce(MPI_IN_PLACE, &count, 1, MPI_GRAPH_TYPE, 
                         MPI_SUM, MPI_COMM_WORLD);
+                if(rank_ == 0) std::cout << count << std::endl;
 
                 if (count == 0)
                     break;

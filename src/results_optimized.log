@@ -1,900 +1,899 @@
 == cage15.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 2.897 seconds
+Reading file takes 1.719 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
 Number of Vertices: 52177205
 Number of Edges: 94044692
 Sorting el for all G(V) takes 0.041 seconds
-Time taken for matching: 0.597
+Time taken for matching: 0.298
 
 
 == cage15.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.987 seconds
+Reading file takes 0.925 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
 Number of Vertices: 52177205
 Number of Edges: 94044692
 Sorting el for all G(V) takes 0.022 seconds
-Time taken for matching: 0.243
+Time taken for matching: 0.201
 
 
 == cage15.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.519 seconds
+Reading file takes 0.502 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
 Number of Vertices: 52177205
 Number of Edges: 94044692
-Sorting el for all G(V) takes 0.011 seconds
-Time taken for matching: 0.174
+Sorting el for all G(V) takes 0.012 seconds
+Time taken for matching: 0.149
 
 
 == cage15.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.496 seconds
+Reading file takes 0.417 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
 Number of Vertices: 52177205
 Number of Edges: 94044692
 Sorting el for all G(V) takes 0.005 seconds
-Time taken for matching: 0.267
+Time taken for matching: 0.223
 
 
 == cage15.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.235 seconds
+Reading file takes 0.206 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
 Number of Vertices: 52177205
 Number of Edges: 94044692
 Sorting el for all G(V) takes 0.003 seconds
-Time taken for matching: 0.532
+Time taken for matching: 0.228
 
 
 == cage15.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.695 seconds
+Reading file takes 0.201 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
 Number of Vertices: 52177205
 Number of Edges: 94044692
 Sorting el for all G(V) takes 0.001 seconds
-Time taken for matching: 0.475
+Time taken for matching: 0.256
 
 
 == HV15R.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 7.086 seconds
+Reading file takes 6.351 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
 Number of Vertices: 164374738
 Number of Edges: 324715138
 Sorting el for all G(V) takes 0.238 seconds
-Time taken for matching: 4.118
+Time taken for matching: 3.207
 
 
 == HV15R.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 2.903 seconds
+Reading file takes 2.902 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
 Number of Vertices: 164374738
 Number of Edges: 324715138
 Sorting el for all G(V) takes 0.119 seconds
-Time taken for matching: 2.378
+Time taken for matching: 1.933
 
 
 == HV15R.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.564 seconds
+Reading file takes 1.709 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
 Number of Vertices: 164374738
 Number of Edges: 324715138
 Sorting el for all G(V) takes 0.060 seconds
-Time taken for matching: 1.627
+Time taken for matching: 1.466
 
 
 == HV15R.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.006 seconds
+Reading file takes 0.995 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
 Number of Vertices: 164374738
 Number of Edges: 324715138
 Sorting el for all G(V) takes 0.030 seconds
-Time taken for matching: 1.372
+Time taken for matching: 1.224
 
 
 == HV15R.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.623 seconds
+Reading file takes 0.614 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
 Number of Vertices: 164374738
 Number of Edges: 324715138
 Sorting el for all G(V) takes 0.015 seconds
-Time taken for matching: 1.834
+Time taken for matching: 1.681
 
 
 == HV15R.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.856 seconds
+Reading file takes 0.448 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
 Number of Vertices: 164374738
 Number of Edges: 324715138
 Sorting el for all G(V) takes 0.007 seconds
-Time taken for matching: 2.286
+Time taken for matching: 1.906
 
 
 == graph500-scale21-ef16_adj.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 2.619 seconds
+Reading file takes 1.849 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
 Number of Vertices: 1243072
 Number of Edges: 63463300
 Sorting el for all G(V) takes 0.066 seconds
-Time taken for matching: 0.497
+Time taken for matching: 0.242
 
 
 == graph500-scale21-ef16_adj.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.782 seconds
+Reading file takes 0.896 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
 Number of Vertices: 1243072
 Number of Edges: 63463300
 Sorting el for all G(V) takes 0.038 seconds
-Time taken for matching: 0.436
+Time taken for matching: 0.266
 
 
 == graph500-scale21-ef16_adj.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.483 seconds
+Reading file takes 0.550 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
 Number of Vertices: 1243072
 Number of Edges: 63463300
 Sorting el for all G(V) takes 0.026 seconds
-Time taken for matching: 0.642
+Time taken for matching: 0.350
 
 
 == graph500-scale21-ef16_adj.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.435 seconds
+Reading file takes 0.414 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
 Number of Vertices: 1243072
 Number of Edges: 63463300
 Sorting el for all G(V) takes 0.019 seconds
-Time taken for matching: 0.606
+Time taken for matching: 0.522
 
 
 == graph500-scale21-ef16_adj.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.230 seconds
+Reading file takes 0.183 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
 Number of Vertices: 1243072
 Number of Edges: 63463300
 Sorting el for all G(V) takes 0.015 seconds
-Time taken for matching: 0.862
+Time taken for matching: 0.727
 
 
 == graph500-scale21-ef16_adj.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.298 seconds
+Reading file takes 0.193 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
 Number of Vertices: 1243072
 Number of Edges: 63463300
 Sorting el for all G(V) takes 0.013 seconds
-Time taken for matching: 1.146
+Time taken for matching: 0.967
 
 
 == graph500-scale22-ef16_adj.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 4.377 seconds
+Reading file takes 3.285 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
 Number of Vertices: 2393285
 Number of Edges: 128194008
 Sorting el for all G(V) takes 0.123 seconds
-Time taken for matching: 0.880
+Time taken for matching: 0.229
 
 
 == graph500-scale22-ef16_adj.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.996 seconds
+Reading file takes 1.638 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
 Number of Vertices: 2393285
 Number of Edges: 128194008
 Sorting el for all G(V) takes 0.068 seconds
-Time taken for matching: 0.880
+Time taken for matching: 0.224
 
 
 == graph500-scale22-ef16_adj.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.833 seconds
+Reading file takes 0.834 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
 Number of Vertices: 2393285
 Number of Edges: 128194008
 Sorting el for all G(V) takes 0.043 seconds
-Time taken for matching: 0.701
+Time taken for matching: 0.245
 
 
 == graph500-scale22-ef16_adj.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.619 seconds
+Reading file takes 0.594 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
 Number of Vertices: 2393285
 Number of Edges: 128194008
 Sorting el for all G(V) takes 0.032 seconds
-Time taken for matching: 0.937
+Time taken for matching: 0.375
 
 
 == graph500-scale22-ef16_adj.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.339 seconds
+Reading file takes 0.322 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
 Number of Vertices: 2393285
 Number of Edges: 128194008
 Sorting el for all G(V) takes 0.023 seconds
-Time taken for matching: 0.919
+Time taken for matching: 0.520
 
 
 == graph500-scale22-ef16_adj.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.674 seconds
+Reading file takes 0.254 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
 Number of Vertices: 2393285
 Number of Edges: 128194008
 Sorting el for all G(V) takes 0.020 seconds
-Time taken for matching: 0.849
+Time taken for matching: 0.668
 
 
 == graph500-scale23-ef16_adj.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 7.664 seconds
+Reading file takes 6.483 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
 Number of Vertices: 4606314
 Number of Edges: 258501410
 Sorting el for all G(V) takes 0.254 seconds
-Time taken for matching: 1.414
+Time taken for matching: 0.377
 
 
 == graph500-scale23-ef16_adj.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 3.066 seconds
+Reading file takes 3.518 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
 Number of Vertices: 4606314
 Number of Edges: 258501410
-Sorting el for all G(V) takes 0.143 seconds
-Time taken for matching: 1.359
+Sorting el for all G(V) takes 0.142 seconds
+Time taken for matching: 0.316
 
 
 == graph500-scale23-ef16_adj.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.595 seconds
+Reading file takes 2.213 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
 Number of Vertices: 4606314
 Number of Edges: 258501410
 Sorting el for all G(V) takes 0.081 seconds
-Time taken for matching: 2.025
+Time taken for matching: 0.341
 
 
 == graph500-scale23-ef16_adj.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 2.140 seconds
+Reading file takes 1.001 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
 Number of Vertices: 4606314
 Number of Edges: 258501410
 Sorting el for all G(V) takes 0.053 seconds
-Time taken for matching: 2.447
+Time taken for matching: 0.471
 
 
 == graph500-scale23-ef16_adj.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.583 seconds
+Reading file takes 0.542 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
 Number of Vertices: 4606314
 Number of Edges: 258501410
 Sorting el for all G(V) takes 0.041 seconds
-Time taken for matching: 1.258
+Time taken for matching: 0.716
 
 
 == graph500-scale23-ef16_adj.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.825 seconds
+Reading file takes 0.378 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
 Number of Vertices: 4606314
 Number of Edges: 258501410
 Sorting el for all G(V) takes 0.033 seconds
-Time taken for matching: 1.340
+Time taken for matching: 0.856
 
 
 == graph500-scale24-ef16_adj.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 15.104 seconds
+Reading file takes 12.311 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
 Number of Vertices: 8860450
 Number of Edges: 520523686
-Sorting el for all G(V) takes 0.544 seconds
-Time taken for matching: 4.019
+Sorting el for all G(V) takes 0.545 seconds
+Time taken for matching: 0.608
 
 
 == graph500-scale24-ef16_adj.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 5.753 seconds
+Reading file takes 6.279 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
 Number of Vertices: 8860450
 Number of Edges: 520523686
 Sorting el for all G(V) takes 0.272 seconds
-Time taken for matching: 2.156
+Time taken for matching: 0.459
 
 
 == graph500-scale24-ef16_adj.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 2.971 seconds
+Reading file takes 3.667 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
 Number of Vertices: 8860450
 Number of Edges: 520523686
 Sorting el for all G(V) takes 0.169 seconds
-Time taken for matching: 3.859
+Time taken for matching: 0.468
 
 
 == graph500-scale24-ef16_adj.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.754 seconds
+Reading file takes 2.739 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
 Number of Vertices: 8860450
 Number of Edges: 520523686
 Sorting el for all G(V) takes 0.105 seconds
-Time taken for matching: 4.497
+Time taken for matching: 0.563
 
 
 == graph500-scale24-ef16_adj.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.057 seconds
+Reading file takes 1.047 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
 Number of Vertices: 8860450
 Number of Edges: 520523686
 Sorting el for all G(V) takes 0.074 seconds
-Time taken for matching: 3.873
+Time taken for matching: 0.888
 
 
 == graph500-scale24-ef16_adj.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.268 seconds
+Reading file takes 0.627 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
 Number of Vertices: 8860450
 Number of Edges: 520523686
-Sorting el for all G(V) takes 0.060 seconds
-Time taken for matching: 5.138
+Sorting el for all G(V) takes 0.059 seconds
+Time taken for matching: 1.054
 
 
 == kmer_P1a.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 6.550 seconds
+Reading file takes 5.487 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
 Number of Vertices: 139353211
 Number of Edges: 297829984
 Sorting el for all G(V) takes 0.074 seconds
-Time taken for matching: 1.558
+Time taken for matching: 1.522
 
 
 == kmer_P1a.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 2.714 seconds
+Reading file takes 2.656 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
 Number of Vertices: 139353211
 Number of Edges: 297829984
 Sorting el for all G(V) takes 0.040 seconds
-Time taken for matching: 0.937
+Time taken for matching: 0.829
 
 
 == kmer_P1a.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.443 seconds
+Reading file takes 1.405 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
 Number of Vertices: 139353211
 Number of Edges: 297829984
-Sorting el for all G(V) takes 0.026 seconds
-Time taken for matching: 0.524
+Sorting el for all G(V) takes 0.025 seconds
+Time taken for matching: 0.489
 
 
 == kmer_P1a.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.977 seconds
+Reading file takes 0.921 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
 Number of Vertices: 139353211
 Number of Edges: 297829984
 Sorting el for all G(V) takes 0.014 seconds
-Time taken for matching: 0.444
+Time taken for matching: 0.421
 
 
 == kmer_P1a.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.524 seconds
+Reading file takes 0.475 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
 Number of Vertices: 139353211
 Number of Edges: 297829984
-Sorting el for all G(V) takes 0.007 seconds
-Time taken for matching: 0.305
+Sorting el for all G(V) takes 0.008 seconds
+Time taken for matching: 0.291
 
 
 == kmer_P1a.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.389 seconds
+Reading file takes 0.481 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
 Number of Vertices: 139353211
 Number of Edges: 297829984
 Sorting el for all G(V) takes 0.004 seconds
-Time taken for matching: 0.284
+Time taken for matching: 0.280
 
 
 == kmer_U1a.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 3.070 seconds
+Reading file takes 2.276 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
 Number of Vertices: 67716231
 Number of Edges: 138778562
 Sorting el for all G(V) takes 0.033 seconds
-Time taken for matching: 0.649
+Time taken for matching: 0.598
 
 
 == kmer_U1a.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.326 seconds
+Reading file takes 1.197 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
 Number of Vertices: 67716231
 Number of Edges: 138778562
-Sorting el for all G(V) takes 0.018 seconds
-Time taken for matching: 0.379
+Sorting el for all G(V) takes 0.017 seconds
+Time taken for matching: 0.332
 
 
 == kmer_U1a.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.695 seconds
+Reading file takes 1.313 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
 Number of Vertices: 67716231
 Number of Edges: 138778562
 Sorting el for all G(V) takes 0.011 seconds
-Time taken for matching: 0.193
+Time taken for matching: 0.182
 
 
 == kmer_U1a.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.585 seconds
+Reading file takes 0.743 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
 Number of Vertices: 67716231
 Number of Edges: 138778562
 Sorting el for all G(V) takes 0.006 seconds
-Time taken for matching: 0.225
+Time taken for matching: 0.214
 
 
 == kmer_U1a.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.296 seconds
+Reading file takes 0.303 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
 Number of Vertices: 67716231
 Number of Edges: 138778562
 Sorting el for all G(V) takes 0.003 seconds
-Time taken for matching: 0.106
+Time taken for matching: 0.108
 
 
 == kmer_U1a.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.295 seconds
+Reading file takes 0.207 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
 Number of Vertices: 67716231
 Number of Edges: 138778562
 Sorting el for all G(V) takes 0.001 seconds
-Time taken for matching: 0.101
+Time taken for matching: 0.098
 
 
 == kmer_V1r.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 8.488 seconds
+Reading file takes 8.749 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
 Number of Vertices: 214005017
 Number of Edges: 465410904
 Sorting el for all G(V) takes 0.118 seconds
-Time taken for matching: 2.029
+Time taken for matching: 1.951
 
 
 == kmer_V1r.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 4.110 seconds
+Reading file takes 4.105 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
 Number of Vertices: 214005017
 Number of Edges: 465410904
-Sorting el for all G(V) takes 0.064 seconds
-Time taken for matching: 1.154
+Sorting el for all G(V) takes 0.063 seconds
+Time taken for matching: 1.008
 
 
 == kmer_V1r.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 2.226 seconds
+Reading file takes 2.169 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
 Number of Vertices: 214005017
 Number of Edges: 465410904
 Sorting el for all G(V) takes 0.040 seconds
-Time taken for matching: 0.566
+Time taken for matching: 0.594
 
 
 == kmer_V1r.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.393 seconds
+Reading file takes 1.388 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
 Number of Vertices: 214005017
 Number of Edges: 465410904
-Sorting el for all G(V) takes 0.023 seconds
-Time taken for matching: 0.447
+Sorting el for all G(V) takes 0.022 seconds
+Time taken for matching: 0.405
 
 
 == kmer_V1r.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.780 seconds
+Reading file takes 0.779 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
 Number of Vertices: 214005017
 Number of Edges: 465410904
 Sorting el for all G(V) takes 0.012 seconds
-Time taken for matching: 0.324
+Time taken for matching: 0.207
 
 
 == kmer_V1r.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.551 seconds
+Reading file takes 0.555 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
 Number of Vertices: 214005017
 Number of Edges: 465410904
 Sorting el for all G(V) takes 0.006 seconds
-Time taken for matching: 0.154
+Time taken for matching: 0.146
 
 
 == kmer_V2a.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 2.831 seconds
+Reading file takes 3.161 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
 Number of Vertices: 55042369
 Number of Edges: 117217600
 Sorting el for all G(V) takes 0.029 seconds
-Time taken for matching: 0.584
+Time taken for matching: 0.530
 
 
 == kmer_V2a.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.175 seconds
+Reading file takes 1.171 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
 Number of Vertices: 55042369
 Number of Edges: 117217600
 Sorting el for all G(V) takes 0.015 seconds
-Time taken for matching: 0.354
+Time taken for matching: 0.309
 
 
 == kmer_V2a.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.632 seconds
+Reading file takes 0.645 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
 Number of Vertices: 55042369
 Number of Edges: 117217600
 Sorting el for all G(V) takes 0.010 seconds
-Time taken for matching: 0.203
+Time taken for matching: 0.194
 
 
 == kmer_V2a.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.516 seconds
+Reading file takes 0.513 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
 Number of Vertices: 55042369
 Number of Edges: 117217600
 Sorting el for all G(V) takes 0.005 seconds
-Time taken for matching: 0.258
+Time taken for matching: 0.197
 
 
 == kmer_V2a.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.281 seconds
+Reading file takes 0.291 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
 Number of Vertices: 55042369
 Number of Edges: 117217600
 Sorting el for all G(V) takes 0.003 seconds
-Time taken for matching: 0.142
+Time taken for matching: 0.135
 
 
 == kmer_V2a.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.281 seconds
+Reading file takes 0.265 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
 Number of Vertices: 55042369
 Number of Edges: 117217600
 Sorting el for all G(V) takes 0.001 seconds
-Time taken for matching: 0.138
+Time taken for matching: 0.139
 
 
 == static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.948 seconds
+Reading file takes 0.981 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
 Number of Vertices: 1000001
 Number of Edges: 47562866
 Sorting el for all G(V) takes 0.010 seconds
-Time taken for matching: 0.383
+Time taken for matching: 0.259
 
 
 == static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.450 seconds
+Reading file takes 0.463 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
 Number of Vertices: 1000001
 Number of Edges: 47562866
 Sorting el for all G(V) takes 0.005 seconds
-Time taken for matching: 0.319
+Time taken for matching: 0.221
 
 
 == static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.253 seconds
+Reading file takes 0.234 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
 Number of Vertices: 1000001
 Number of Edges: 47562866
 Sorting el for all G(V) takes 0.002 seconds
-Time taken for matching: 0.261
+Time taken for matching: 0.224
 
 
 == static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.343 seconds
+Reading file takes 0.345 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
 Number of Vertices: 1000001
 Number of Edges: 47562866
 Sorting el for all G(V) takes 0.001 seconds
-Time taken for matching: 0.387
+Time taken for matching: 0.339
 
 
 == static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.249 seconds
+Reading file takes 0.244 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
 Number of Vertices: 1000001
 Number of Edges: 47562866
 Sorting el for all G(V) takes 0.001 seconds
-Time taken for matching: 0.465
+Time taken for matching: 0.430
 
 
 == static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.369 seconds
+Reading file takes 0.389 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
 Number of Vertices: 1000001
 Number of Edges: 47562866
 Sorting el for all G(V) takes 0.000 seconds
-Time taken for matching: 0.521
+Time taken for matching: 0.494
 
 
 == static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 4 cores ==
+srun: Step created for StepId=712954.182
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 3.626 seconds
+Reading file takes 4.134 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
 Number of Vertices: 5000001
 Number of Edges: 237529656
 Sorting el for all G(V) takes 0.052 seconds
-Time taken for matching: 1.876
+Time taken for matching: 1.040
 
 
 == static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.644 seconds
+Reading file takes 1.626 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
 Number of Vertices: 5000001
 Number of Edges: 237529656
 Sorting el for all G(V) takes 0.028 seconds
-Time taken for matching: 1.151
+Time taken for matching: 0.626
 
 
 == static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.859 seconds
+Reading file takes 0.857 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
 Number of Vertices: 5000001
 Number of Edges: 237529656
 Sorting el for all G(V) takes 0.014 seconds
-Time taken for matching: 0.673
+Time taken for matching: 0.414
 
 
 == static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.664 seconds
+Reading file takes 0.637 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
 Number of Vertices: 5000001
 Number of Edges: 237529656
 Sorting el for all G(V) takes 0.007 seconds
-Time taken for matching: 0.583
+Time taken for matching: 0.441
 
 
 == static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.346 seconds
+Reading file takes 0.362 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
 Number of Vertices: 5000001
 Number of Edges: 237529656
 Sorting el for all G(V) takes 0.003 seconds
-Time taken for matching: 0.585
+Time taken for matching: 0.510
 
 
 == static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.313 seconds
+Reading file takes 0.353 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
 Number of Vertices: 5000001
 Number of Edges: 237529656
-Sorting el for all G(V) takes 0.001 seconds
-Time taken for matching: 0.618
+Sorting el for all G(V) takes 0.002 seconds
+Time taken for matching: 0.593
 
 
 == static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 12.494 seconds
+Reading file takes 12.574 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
 Number of Vertices: 20000001
 Number of Edges: 950010974
 Sorting el for all G(V) takes 0.218 seconds
-Time taken for matching: 8.799
+Time taken for matching: 4.975
 
 
 == static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 6.095 seconds
+Reading file takes 6.061 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
 Number of Vertices: 20000001
 Number of Edges: 950010974
-Sorting el for all G(V) takes 0.116 seconds
-Time taken for matching: 4.423
+Sorting el for all G(V) takes 0.115 seconds
+Time taken for matching: 2.665
 
 
 == static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 3.237 seconds
+Reading file takes 3.256 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
 Number of Vertices: 20000001
 Number of Edges: 950010974
-Sorting el for all G(V) takes 0.058 seconds
-Time taken for matching: 2.193
+Sorting el for all G(V) takes 0.057 seconds
+Time taken for matching: 1.284
 
 
 == static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.948 seconds
+Reading file takes 1.925 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
 Number of Vertices: 20000001
 Number of Edges: 950010974
-Sorting el for all G(V) takes 0.029 seconds
-Time taken for matching: 1.458
+Sorting el for all G(V) takes 0.028 seconds
+Time taken for matching: 0.871
 
 
 == static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.052 seconds
+Reading file takes 1.064 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
 Number of Vertices: 20000001
 Number of Edges: 950010974
 Sorting el for all G(V) takes 0.014 seconds
-Time taken for matching: 0.976
+Time taken for matching: 0.726
 
 
 == static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.733 seconds
+Reading file takes 0.743 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
 Number of Vertices: 20000001
 Number of Edges: 950010974
 Sorting el for all G(V) takes 0.007 seconds
-Time taken for matching: 0.815
+Time taken for matching: 0.725
 
 
 == com-Orkut.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 6.435 seconds
+Reading file takes 6.432 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
 Number of Vertices: 3072441
 Number of Edges: 234370166
 Sorting el for all G(V) takes 0.163 seconds
-Time taken for matching: 0.593
+Time taken for matching: 0.546
 
 
 == com-Orkut.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 2.904 seconds
+Reading file takes 2.786 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
 Number of Vertices: 3072441
 Number of Edges: 234370166
 Sorting el for all G(V) takes 0.082 seconds
-Time taken for matching: 0.683
+Time taken for matching: 0.528
 
 
 == com-Orkut.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.456 seconds
+Reading file takes 1.422 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
 Number of Vertices: 3072441
 Number of Edges: 234370166
 Sorting el for all G(V) takes 0.042 seconds
-Time taken for matching: 0.759
+Time taken for matching: 0.670
 
 
 == com-Orkut.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.948 seconds
+Reading file takes 0.906 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
 Number of Vertices: 3072441
 Number of Edges: 234370166
 Sorting el for all G(V) takes 0.021 seconds
-Time taken for matching: 0.923
+Time taken for matching: 0.810
 
 
 == com-Orkut.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 1.061 seconds
+Reading file takes 0.525 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
 Number of Vertices: 3072441
 Number of Edges: 234370166
 Sorting el for all G(V) takes 0.011 seconds
-Time taken for matching: 1.532
+Time taken for matching: 1.418
 
 
 == com-Orkut.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 0.373 seconds
+Reading file takes 0.388 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
 Number of Vertices: 3072441
 Number of Edges: 234370166
 Sorting el for all G(V) takes 0.006 seconds
-Time taken for matching: 1.748
+Time taken for matching: 1.742
 
 
 == com-Friendster.mtx | 4 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 60.998 seconds
+Reading file takes 60.275 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
 Number of Vertices: 65608366
 Number of Edges: 3612134270
-Sorting el for all G(V) takes 2.701 seconds
-Time taken for matching: 8.368
+Sorting el for all G(V) takes 2.702 seconds
+Time taken for matching: 6.615
 
 
 == com-Friendster.mtx | 8 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 29.972 seconds
+Reading file takes 31.736 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
 Number of Vertices: 65608366
 Number of Edges: 3612134270
 Sorting el for all G(V) takes 1.353 seconds
-Time taken for matching: 5.266
+Time taken for matching: 3.844
 
 
 == com-Friendster.mtx | 16 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 15.165 seconds
+Reading file takes 15.028 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
 Number of Vertices: 65608366
 Number of Edges: 3612134270
-Sorting el for all G(V) takes 0.671 seconds
-Time taken for matching: 3.525
+Sorting el for all G(V) takes 0.673 seconds
+Time taken for matching: 2.960
 
 
 == com-Friendster.mtx | 32 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 8.002 seconds
+Reading file takes 8.055 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
 Number of Vertices: 65608366
 Number of Edges: 3612134270
-Sorting el for all G(V) takes 0.334 seconds
-Time taken for matching: 2.833
+Sorting el for all G(V) takes 0.335 seconds
+Time taken for matching: 2.432
 
 
 == com-Friendster.mtx | 64 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 4.846 seconds
+Reading file takes 4.853 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
 Number of Vertices: 65608366
 Number of Edges: 3612134270
 Sorting el for all G(V) takes 0.165 seconds
-Time taken for matching: 4.217
+Time taken for matching: 3.835
 
 
 == com-Friendster.mtx | 128 cores ==
 Graph Matching 1/2-Approx Actor Version
-Reading file takes 3.291 seconds
+Reading file takes 3.632 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
 Number of Vertices: 65608366
 Number of Edges: 3612134270
-Sorting el for all G(V) takes 0.083 seconds
-Time taken for matching: 4.550
-
-
+Sorting el for all G(V) takes 0.082 seconds
+Time taken for matching: 4.385

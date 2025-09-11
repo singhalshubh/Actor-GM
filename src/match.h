@@ -38,7 +38,18 @@ inline EDGE find_mate(const graph &g, VERTEX ll_u) {
     if(g.adj[ll_u].size() == 0) {
         return std::make_pair(0, -1.0);
     }
-    return g.adj[ll_u].back();
+    #if OPTIMIZED 
+        return g.adj[ll_u].back();
+    #else
+        EDGE e = std::make_pair(0, -1.0);
+        for(auto &ngbr: g.adj[ll_u]) {
+            if(e.second < ngbr.second || (e.second == ngbr.second && e.first > ngbr.first)) {
+                e.first = ngbr.first;
+                e.second = ngbr.second;
+            }
+        }
+        return e;
+    #endif
 }
 
 class matchPkt {
@@ -203,9 +214,11 @@ void match::matching(graph &g) {
                 break;
             }
         }
-        if(lgp_reduce_add_l(should_terminate) == 0) {
+        int glb = lgp_reduce_add_l(should_terminate);
+        if(glb == 0) {
             break;
         }
+        //T0_fprintf(stderr,"%ld\n", glb);
     }
     T0_fprintf(stderr, "Time taken for matching: %.3f\n", wall_seconds() - t1);
 }

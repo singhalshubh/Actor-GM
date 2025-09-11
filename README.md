@@ -14,11 +14,13 @@ Install hclib library (hclib::actor) from [hclib-actor.com](https://hclib-actor.
 cd Actor-GM/src/
 make
 ```
+This will generate two executables - `main` and `main_optimized`. `main` uses O(degree) linear search to compute the mate of a vertex, whereas `main_optimized` uses O(1) since the adjacency list of the vertex is sorted while reading.
 
 ## Experimentation
-Refer to `src/results.log` for our results of the implementation tested on PACE at Georgia Tech, with upto 128 nodes, 16 ppn and 4GB memory per cpu (in exclusive mode).
+Refer to `src/results.log` and `src/results_optimized.log` for our results of the implementation tested on PACE at Georgia Tech, with upto 128 nodes, 16 ppn and 4GB memory per cpu (in exclusive mode).
 ```
 cd Actor-GM/src/
+source run_optimized.sh &> results_optimized.log
 source run.sh &> results.log
 ```
 
@@ -30,7 +32,7 @@ source run.sh &> results.log
 ```
 
 - `mel-patched` directory contains the corrected version of the `mel` algorithm.
-- Refer to `mel-patched/results.log` for experimentation, done on same configuration of nodes as stated above.
+- Refer to `mel-patched/results.log` for experimentation, done upto 128 nodes, 16 ppn and 12GB memory per cpu (in exclusive mode). Note that `mel` needs much higher memory requirment since it runs in OpenIB OOM errors or simply hangs due to insufficient memory.
 
 ## Authors
 Shubhendra Pal Singhal (ssinghal74@gatech.edu)

@@ -1,0 +1,1290 @@
+== cage15.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 18884256
+Average number of edges: 1.54999e+06
+Expected value of X^2: 2.3554e+13
+Variance: 2.11516e+13
+Standard deviation: 4.59908e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.41894
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 1.66708 on 64 processes.
+
+
+== cage15.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 9768337
+Average number of edges: 774996
+Expected value of X^2: 6.06317e+12
+Variance: 5.46256e+12
+Standard deviation: 2.33721e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.844537
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 1.02614 on 128 processes.
+
+
+== cage15.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 5212272
+Average number of edges: 387498
+Expected value of X^2: 1.5406e+12
+Variance: 1.39045e+12
+Standard deviation: 1.17917e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.503948
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 0.839495 on 256 processes.
+
+
+== cage15.bin | 32 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 2736465
+Average number of edges: 193749
+Expected value of X^2: 3.8903e+11
+Variance: 3.51491e+11
+Standard deviation: 592867
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.407038
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 0.711701 on 512 processes.
+
+
+== cage15.bin | 64 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 1543726
+Average number of edges: 96874.6
+Expected value of X^2: 9.83425e+10
+Variance: 8.89578e+10
+Standard deviation: 298258
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.433289
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 0.769748 on 1024 processes.
+
+
+== cage15.bin | 128 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 827189
+Average number of edges: 48437.3
+Expected value of X^2: 2.47191e+10
+Variance: 2.2373e+10
+Standard deviation: 149576
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.298237
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 0.830744 on 2048 processes.
+
+
+== HV15R.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 326732307
+Average number of edges: 5.10519e+06
+Expected value of X^2: 1.66803e+15
+Variance: 1.64197e+15
+Standard deviation: 4.05212e+07
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 12.1258
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 11.8099 on 64 processes.
+
+
+== HV15R.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 209977392
+Average number of edges: 2.5526e+06
+Expected value of X^2: 4.50955e+14
+Variance: 4.44439e+14
+Standard deviation: 2.10817e+07
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 6.54356
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 8.66828 on 128 processes.
+
+
+== HV15R.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 105484640
+Average number of edges: 1.2763e+06
+Expected value of X^2: 1.27898e+14
+Variance: 1.26269e+14
+Standard deviation: 1.12369e+07
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 4.06942
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 4.306 on 256 processes.
+
+
+== HV15R.bin | 32 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 53525786
+Average number of edges: 638149
+Expected value of X^2: 3.22003e+13
+Variance: 3.1793e+13
+Standard deviation: 5.63853e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 3.07179
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 2.78823 on 512 processes.
+
+
+== HV15R.bin | 64 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 28259263
+Average number of edges: 319075
+Expected value of X^2: 8.15519e+12
+Variance: 8.05338e+12
+Standard deviation: 2.83785e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 2.19642
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 1.97498 on 1024 processes.
+
+
+== HV15R.bin | 128 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 14748010
+Average number of edges: 159537
+Expected value of X^2: 2.07127e+12
+Variance: 2.04582e+12
+Standard deviation: 1.43032e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.15709
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 1.81503 on 2048 processes.
+
+
+== graph500-scale21-ef16_adj.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1243072
+Number of edges: 63463300
+Maximum number of edges: 3382448
+Average number of edges: 991614
+Expected value of X^2: 1.38482e+12
+Variance: 4.01521e+11
+Standard deviation: 633657
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.935397
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 2.2051 on 64 processes.
+
+
+== graph500-scale21-ef16_adj.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1243072
+Number of edges: 63463300
+Maximum number of edges: 2465919
+Average number of edges: 495807
+Expected value of X^2: 3.93516e+11
+Variance: 1.47691e+11
+Standard deviation: 384306
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.220575
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 2.57375 on 128 processes.
+
+
+== graph500-scale21-ef16_adj.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1243072
+Number of edges: 63463300
+Maximum number of edges: 1354090
+Average number of edges: 247904
+Expected value of X^2: 1.07722e+11
+Variance: 4.62661e+10
+Standard deviation: 215096
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.15108
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 4.29535 on 256 processes.
+
+
+== graph500-scale21-ef16_adj.bin | 32 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1243072
+Number of edges: 63463300
+Maximum number of edges: 1122069
+Average number of edges: 123952
+Expected value of X^2: 3.19502e+10
+Variance: 1.65861e+10
+Standard deviation: 128787
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.167887
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 9.92458 on 512 processes.
+
+
+== graph500-scale21-ef16_adj.bin | 64 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1243072
+Number of edges: 63463300
+Maximum number of edges: 1035884
+Average number of edges: 61975.9
+Expected value of X^2: 1.00651e+10
+Variance: 6.22413e+09
+Standard deviation: 78893.1
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.17469
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 22.4564 on 1024 processes.
+
+
+== graph500-scale21-ef16_adj.bin | 128 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1243072
+Number of edges: 63463300
+Maximum number of edges: 761968
+Average number of edges: 30987.9
+Expected value of X^2: 3.08241e+09
+Variance: 2.12216e+09
+Standard deviation: 46066.9
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.24238
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 36.7442 on 2048 processes.
+
+
+== graph500-scale22-ef16_adj.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2393285
+Number of edges: 128194008
+Maximum number of edges: 7296808
+Average number of edges: 2.00303e+06
+Expected value of X^2: 5.80754e+12
+Variance: 1.7954e+12
+Standard deviation: 1.33993e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.722923
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 5.01704 on 64 processes.
+
+
+== graph500-scale22-ef16_adj.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2393285
+Number of edges: 128194008
+Maximum number of edges: 5348843
+Average number of edges: 1.00152e+06
+Expected value of X^2: 1.65973e+12
+Variance: 6.567e+11
+Standard deviation: 810370
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.611002
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 4.61921 on 128 processes.
+
+
+== graph500-scale22-ef16_adj.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2393285
+Number of edges: 128194008
+Maximum number of edges: 3866739
+Average number of edges: 500758
+Expected value of X^2: 4.76583e+11
+Variance: 2.25824e+11
+Standard deviation: 475210
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.268113
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 5.96006 on 256 processes.
+
+
+== graph500-scale22-ef16_adj.bin | 32 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2393285
+Number of edges: 128194008
+Maximum number of edges: 2826626
+Average number of edges: 250379
+Expected value of X^2: 1.36671e+11
+Variance: 7.3981e+10
+Standard deviation: 271994
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.103918
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 42.1662 on 512 processes.
+
+
+== graph500-scale22-ef16_adj.bin | 64 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2393285
+Number of edges: 128194008
+Maximum number of edges: 2062910
+Average number of edges: 125189
+Expected value of X^2: 4.22362e+10
+Variance: 2.65638e+10
+Standard deviation: 162984
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.32751
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 23.9553 on 1024 processes.
+
+
+== graph500-scale22-ef16_adj.bin | 128 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2393285
+Number of edges: 128194008
+Maximum number of edges: 1515486
+Average number of edges: 62594.7
+Expected value of X^2: 1.19924e+10
+Variance: 8.07432e+09
+Standard deviation: 89857.2
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.35619
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 42.4459 on 2048 processes.
+
+
+== graph500-scale23-ef16_adj.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 4606314
+Number of edges: 258501410
+Maximum number of edges: 14241027
+Average number of edges: 4.03908e+06
+Expected value of X^2: 2.28865e+13
+Variance: 6.57234e+12
+Standard deviation: 2.56366e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.33472
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 10.4027 on 64 processes.
+
+
+== graph500-scale23-ef16_adj.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 4606314
+Number of edges: 258501410
+Maximum number of edges: 8658926
+Average number of edges: 2.01954e+06
+Expected value of X^2: 6.50691e+12
+Variance: 2.42836e+12
+Standard deviation: 1.55832e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.20294
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 9.34973 on 128 processes.
+
+
+== graph500-scale23-ef16_adj.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 4606314
+Number of edges: 258501410
+Maximum number of edges: 6874376
+Average number of edges: 1.00977e+06
+Expected value of X^2: 1.85626e+12
+Variance: 8.36622e+11
+Standard deviation: 914671
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.927719
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 9.63703 on 256 processes.
+
+
+== graph500-scale23-ef16_adj.bin | 32 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 4606314
+Number of edges: 258501410
+Maximum number of edges: 3909793
+Average number of edges: 504886
+Expected value of X^2: 5.23385e+11
+Variance: 2.68476e+11
+Standard deviation: 518147
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.819041
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 64.3066 on 512 processes.
+
+
+== graph500-scale23-ef16_adj.bin | 64 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 4606314
+Number of edges: 258501410
+Maximum number of edges: 3462537
+Average number of edges: 252443
+Expected value of X^2: 1.56671e+11
+Variance: 9.29435e+10
+Standard deviation: 304866
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.661722
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 25.4156 on 1024 processes.
+
+
+== graph500-scale23-ef16_adj.bin | 128 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 4606314
+Number of edges: 258501410
+Maximum number of edges: 2581364
+Average number of edges: 126221
+Expected value of X^2: 4.61786e+10
+Variance: 3.02468e+10
+Standard deviation: 173916
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.454279
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+graph500-scale23-ef16_adj.bin on 128 cores did not finish within 5 minutes, skipping...
+
+
+== graph500-scale24-ef16_adj.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 8860450
+Number of edges: 520523686
+Maximum number of edges: 26377330
+Average number of edges: 8.13318e+06
+Expected value of X^2: 9.16636e+13
+Variance: 2.55149e+13
+Standard deviation: 5.05123e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 2.22664
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 15.0454 on 64 processes.
+
+
+== graph500-scale24-ef16_adj.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 8860450
+Number of edges: 520523686
+Maximum number of edges: 19376747
+Average number of edges: 4.06659e+06
+Expected value of X^2: 2.60729e+13
+Variance: 9.53577e+12
+Standard deviation: 3.088e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.90981
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 12.7721 on 128 processes.
+
+
+== graph500-scale24-ef16_adj.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 8860450
+Number of edges: 520523686
+Maximum number of edges: 13816291
+Average number of edges: 2.0333e+06
+Expected value of X^2: 7.59288e+12
+Variance: 3.45859e+12
+Standard deviation: 1.85973e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.60517
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 14.9194 on 256 processes.
+
+== kmer_P1a.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 139353211
+Number of edges: 297829984
+Maximum number of edges: 4796561
+Average number of edges: 4.65359e+06
+Expected value of X^2: 2.16598e+13
+Variance: 3.88004e+09
+Standard deviation: 62290
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.9511
+Execution time (in s) for maximal edge matching: 6.34832 on 64 processes.
+
+
+== kmer_P1a.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 139353211
+Number of edges: 297829984
+Maximum number of edges: 2470973
+Average number of edges: 2.3268e+06
+Expected value of X^2: 5.41521e+12
+Variance: 1.22867e+09
+Standard deviation: 35052.4
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.974562
+Execution time (in s) for maximal edge matching: 4.05521 on 128 processes.
+
+
+== kmer_P1a.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 139353211
+Number of edges: 297829984
+Maximum number of edges: 1281552
+Average number of edges: 1.1634e+06
+Expected value of X^2: 1.3539e+12
+Variance: 4.0466e+08
+Standard deviation: 20116.2
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.05309
+Execution time (in s) for maximal edge matching: 3.1427 on 256 processes.
+
+
+== kmer_P1a.bin | 32 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 139353211
+Number of edges: 297829984
+Maximum number of edges: 675536
+Average number of edges: 581699
+Expected value of X^2: 3.385e+11
+Variance: 1.26417e+08
+Standard deviation: 11243.5
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.35863
+Execution time (in s) for maximal edge matching: 3.88165 on 512 processes.
+
+
+== kmer_P1a.bin | 64 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 139353211
+Number of edges: 297829984
+Maximum number of edges: 343239
+Average number of edges: 290850
+Expected value of X^2: 8.46317e+10
+Variance: 3.81686e+07
+Standard deviation: 6178.07
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.319478
+Execution time (in s) for maximal edge matching: 6.97182 on 1024 processes.
+
+
+== kmer_P1a.bin | 128 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 139353211
+Number of edges: 297829984
+Maximum number of edges: 186561
+Average number of edges: 145425
+Expected value of X^2: 2.11602e+10
+Variance: 1.17982e+07
+Standard deviation: 3434.85
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.285866
+Execution time (in s) for maximal edge matching: 11.2076 on 2048 processes.
+
+
+== kmer_U1a.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 67716231
+Number of edges: 138778562
+Maximum number of edges: 2202357
+Average number of edges: 2.16842e+06
+Expected value of X^2: 4.70276e+12
+Variance: 7.40424e+08
+Standard deviation: 27210.7
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 2.20212
+Execution time (in s) for maximal edge matching: 3.25785 on 64 processes.
+
+
+== kmer_U1a.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 67716231
+Number of edges: 138778562
+Maximum number of edges: 1107087
+Average number of edges: 1.08421e+06
+Expected value of X^2: 1.17572e+12
+Variance: 2.18215e+08
+Standard deviation: 14772.1
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.6344
+Execution time (in s) for maximal edge matching: 2.16006 on 128 processes.
+
+
+== kmer_U1a.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 67716231
+Number of edges: 138778562
+Maximum number of edges: 555606
+Average number of edges: 542104
+Expected value of X^2: 2.93936e+11
+Variance: 5.95503e+07
+Standard deviation: 7716.89
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.838135
+Execution time (in s) for maximal edge matching: 2.24697 on 256 processes.
+
+
+== kmer_U1a.bin | 32 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 67716231
+Number of edges: 138778562
+Maximum number of edges: 281465
+Average number of edges: 271052
+Expected value of X^2: 7.34853e+10
+Variance: 1.61744e+07
+Standard deviation: 4021.74
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.279091
+Execution time (in s) for maximal edge matching: 3.118 on 512 processes.
+
+
+== kmer_U1a.bin | 64 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 67716231
+Number of edges: 138778562
+Maximum number of edges: 141904
+Average number of edges: 135526
+Expected value of X^2: 1.83716e+10
+Variance: 4.36448e+06
+Standard deviation: 2089.13
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.200059
+Execution time (in s) for maximal edge matching: 4.68985 on 1024 processes.
+
+
+== kmer_U1a.bin | 128 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 67716231
+Number of edges: 138778562
+Maximum number of edges: 72224
+Average number of edges: 67763
+Expected value of X^2: 4.59299e+09
+Variance: 1.17328e+06
+Standard deviation: 1083.18
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.22727
+Execution time (in s) for maximal edge matching: 7.30617 on 2048 processes.
+
+
+== kmer_V1r.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 214005017
+Number of edges: 465410904
+Maximum number of edges: 7521272
+Average number of edges: 7.27205e+06
+Expected value of X^2: 5.28928e+13
+Variance: 1.0167e+10
+Standard deviation: 100832
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 2.48075
+Execution time (in s) for maximal edge matching: 7.8121 on 64 processes.
+
+
+== kmer_V1r.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 214005017
+Number of edges: 465410904
+Maximum number of edges: 3783686
+Average number of edges: 3.63602e+06
+Expected value of X^2: 1.3224e+13
+Variance: 3.30718e+09
+Standard deviation: 57508.1
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.86208
+Execution time (in s) for maximal edge matching: 4.72172 on 128 processes.
+
+
+== kmer_V1r.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 214005017
+Number of edges: 465410904
+Maximum number of edges: 1941910
+Average number of edges: 1.81801e+06
+Expected value of X^2: 3.30628e+12
+Variance: 1.11009e+09
+Standard deviation: 33318
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.45019
+Execution time (in s) for maximal edge matching: 3.42942 on 256 processes.
+
+
+== kmer_V1r.bin | 32 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 214005017
+Number of edges: 465410904
+Maximum number of edges: 990008
+Average number of edges: 909006
+Expected value of X^2: 8.26636e+11
+Variance: 3.44579e+08
+Standard deviation: 18562.8
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.647368
+kmer_V1r.bin on 32 cores did not finish within 5 minutes, skipping...
+
+
+== kmer_V1r.bin | 64 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 214005017
+Number of edges: 465410904
+Maximum number of edges: 502040
+Average number of edges: 454503
+Expected value of X^2: 2.06675e+11
+Variance: 1.02145e+08
+Standard deviation: 10106.7
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.403172
+kmer_V1r.bin on 64 cores did not finish within 5 minutes, skipping...
+
+
+== kmer_V1r.bin | 128 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 214005017
+Number of edges: 465410904
+Maximum number of edges: 257292
+Average number of edges: 227251
+Expected value of X^2: 5.16733e+10
+Variance: 3.01162e+07
+Standard deviation: 5487.82
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.323297
+Execution time (in s) for maximal edge matching: 10.1836 on 2048 processes.
+
+
+== kmer_V2a.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 55042369
+Number of edges: 117217600
+Maximum number of edges: 1862833
+Average number of edges: 1.83152e+06
+Expected value of X^2: 3.35486e+12
+Variance: 3.78739e+08
+Standard deviation: 19461.2
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.18393
+Execution time (in s) for maximal edge matching: 2.79683 on 64 processes.
+
+
+== kmer_V2a.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 55042369
+Number of edges: 117217600
+Maximum number of edges: 937903
+Average number of edges: 915762
+Expected value of X^2: 8.38741e+11
+Variance: 1.20157e+08
+Standard deviation: 10961.6
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.427283
+Execution time (in s) for maximal edge matching: 2.00387 on 128 processes.
+
+
+== kmer_V2a.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 55042369
+Number of edges: 117217600
+Maximum number of edges: 477654
+Average number of edges: 457881
+Expected value of X^2: 2.09693e+11
+Variance: 3.72674e+07
+Standard deviation: 6104.7
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.642602
+Execution time (in s) for maximal edge matching: 2.20312 on 256 processes.
+
+
+== kmer_V2a.bin | 32 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 55042369
+Number of edges: 117217600
+Maximum number of edges: 242313
+Average number of edges: 228941
+Expected value of X^2: 5.24252e+10
+Variance: 1.13692e+07
+Standard deviation: 3371.82
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.182907
+Execution time (in s) for maximal edge matching: 3.15159 on 512 processes.
+
+
+== kmer_V2a.bin | 64 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 55042369
+Number of edges: 117217600
+Maximum number of edges: 124983
+Average number of edges: 114470
+Expected value of X^2: 1.31072e+10
+Variance: 3.72984e+06
+Standard deviation: 1931.28
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.143443
+Execution time (in s) for maximal edge matching: 5.05825 on 1024 processes.
+
+
+== kmer_V2a.bin | 128 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 55042369
+Number of edges: 117217600
+Maximum number of edges: 67711
+Average number of edges: 57235.2
+Expected value of X^2: 3.2771e+09
+Variance: 1.2329e+06
+Standard deviation: 1110.36
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.247172
+Execution time (in s) for maximal edge matching: 7.60512 on 2048 processes.
+
+
+== com-Orkut.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 3072441
+Number of edges: 234370166
+Maximum number of edges: 11751179
+Average number of edges: 3.66203e+06
+Expected value of X^2: 1.7341e+13
+Variance: 3.93052e+12
+Standard deviation: 1.98255e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.62314
+Execution time (in s) for maximal edge matching: 2.18683 on 64 processes.
+
+
+== com-Orkut.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 3072441
+Number of edges: 234370166
+Maximum number of edges: 6799290
+Average number of edges: 1.83102e+06
+Expected value of X^2: 4.48928e+12
+Variance: 1.13665e+12
+Standard deviation: 1.06614e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.704116
+Execution time (in s) for maximal edge matching: 2.60226 on 128 processes.
+
+
+== com-Orkut.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 3072441
+Number of edges: 234370166
+Maximum number of edges: 4499690
+Average number of edges: 915508
+Expected value of X^2: 1.15457e+12
+Variance: 3.16416e+11
+Standard deviation: 562509
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.344932
+Execution time (in s) for maximal edge matching: 4.83644 on 256 processes.
+
+
+== com-Orkut.bin | 32 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 3072441
+Number of edges: 234370166
+Maximum number of edges: 3740138
+Average number of edges: 457754
+Expected value of X^2: 3.02999e+11
+Variance: 9.34603e+10
+Standard deviation: 305713
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.555946
+Execution time (in s) for maximal edge matching: 10.7279 on 512 processes.
+
+
+== com-Orkut.bin | 64 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 3072441
+Number of edges: 234370166
+Maximum number of edges: 3235447
+Average number of edges: 228877
+Expected value of X^2: 8.06268e+10
+Variance: 2.82421e+10
+Standard deviation: 168054
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.475296
+com-Orkut.bin on 64 cores did not finish within 5 minutes, skipping...
+
+
+== com-Orkut.bin | 128 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 3072441
+Number of edges: 234370166
+Maximum number of edges: 2095629
+Average number of edges: 114439
+Expected value of X^2: 2.07083e+10
+Variance: 7.61215e+09
+Standard deviation: 87247.6
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.332895
+Execution time (in s) for maximal edge matching: 39.3972 on 2048 processes.
+
+
+== com-Friendster.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 65608366
+Number of edges: 3612134270
+Maximum number of edges: 99474992
+Average number of edges: 5.64396e+07
+Expected value of X^2: 3.5816e+15
+Variance: 3.96173e+14
+Standard deviation: 1.99041e+07
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 10.5079
+Execution time (in s) for maximal edge matching: 26.6333 on 64 processes.
+
+
+== com-Friendster.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 65608366
+Number of edges: 3612134270
+Maximum number of edges: 50119359
+Average number of edges: 2.82198e+07
+Expected value of X^2: 8.96098e+14
+Variance: 9.97407e+13
+Standard deviation: 9.98703e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 7.77441
+Execution time (in s) for maximal edge matching: 11.3021 on 128 processes.
+
+
+== com-Friendster.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 65608366
+Number of edges: 3612134270
+Maximum number of edges: 25071727
+Average number of edges: 1.41099e+07
+Expected value of X^2: 2.2417e+14
+Variance: 2.50806e+13
+Standard deviation: 5.00806e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 6.23396
+Execution time (in s) for maximal edge matching: 8.68202 on 256 processes.
+
+
+== com-Friendster.bin | 32 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 65608366
+Number of edges: 3612134270
+Maximum number of edges: 12834409
+Average number of edges: 7.05495e+06
+Expected value of X^2: 5.60698e+13
+Variance: 6.2975e+12
+Standard deviation: 2.50948e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 6.35901
+Execution time (in s) for maximal edge matching: 98.0045 on 512 processes.
+
+
+== com-Friendster.bin | 64 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 65608366
+Number of edges: 3612134270
+Maximum number of edges: 6628263
+Average number of edges: 3.52747e+06
+Expected value of X^2: 1.4025e+13
+Variance: 1.58189e+12
+Standard deviation: 1.25773e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 5.36588
+com-Friendster.bin on 64 cores did not finish within 5 minutes, skipping...
+
+
+== com-Friendster.bin | 128 cores ==
+com-Friendster.bin on 128 cores did not finish within 5 minutes, skipping...
+
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.bin | 4 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1000001
+Number of edges: 47562866
+Maximum number of edges: 746328
+Average number of edges: 743170
+Expected value of X^2: 5.52303e+11
+Variance: 1.56621e+06
+Standard deviation: 1251.48
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.201855
+Execution time (in s) for maximal edge matching: 6.53601 on 64 processes.
+
+
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.bin | 8 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1000001
+Number of edges: 47562866
+Maximum number of edges: 374267
+Average number of edges: 371585
+Expected value of X^2: 1.38076e+11
+Variance: 715744
+Standard deviation: 846.017
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.131049
+Execution time (in s) for maximal edge matching: 8.43163 on 128 processes.
+
+
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.bin | 16 cores ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1000001
+Number of edges: 47562866
+Maximum number of edges: 187653
+Average number of edges: 185792
+Expected value of X^2: 3.45192e+10
+Variance: 408546
+Standard deviation: 639.176
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.123962
+Execution time (in s) for maximal edge matching: 16.0937 on 256 processes.
+
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.bin | 32 cores ==
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1000001
+Number of edges: 47562866
+Maximum number of edges: 94227
+Average number of edges: 92896.2
+Expected value of X^2: 8.62993e+09
+Variance: 224119
+Standard deviation: 473.412
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.0934772
+MPI-RMA-FIX[shubh]
+Invoking matching[shubh]
+Execution time (in s) for maximal edge matching: 59.5446 on 512 processes.

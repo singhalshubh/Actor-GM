@@ -85,19 +85,11 @@ python3 convert-to-mtx.py $DATA_PATH/converted/static_highOverlap_lowBlockSizeVa
 python3 convert-to-mtx.py $DATA_PATH/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.bin $DATA_PATH/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
 python3 convert-to-mtx.py $DATA_PATH/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.bin $DATA_PATH/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
 
+## RCM conversions
+python3 rcm.py -i ~/scratch/mel-dataset/converted/cage15.mtx -o ~/scratch/mel-dataset/converted/cage15_rcm.mtx
+python3 rcm.py -i ~/scratch/mel-dataset/converted/HV15R.mtx -o ~/scratch/mel-dataset/converted/HV15R_rcm.mtx
+
+srun -n 1 ./fileConvert -m -r -f $DATA_PATH/converted/cage15_rcm.mtx -o $DATA_PATH/converted/cage15_rcm.bin
+srun -n 1 ./fileConvert -m -r -f $DATA_PATH/converted/HV15R_rcm.mtx -o $DATA_PATH/converted/HV15R_rcm.bin
+
 srun -N 1 -n 24 ./match -f $DATA_PATH/converted/graph500-scale22-ef16_adj.bin -r 24
-
-export OMP_NUM_THREADS=24
-rm -rf matching.net 
-srun -n 1 -c 24 ./bMatching -f $DATA_PATH/converted/graph500-scale22-ef16_adj.mtx -b 1
-wc -l matching.net
-
-export OMP_NUM_THREADS=24
-rm -rf matching.net 
-srun -n 1 -c 24 ./bMatching -f $DATA_PATH/converted/HV15R.mtx -b 1
-wc -l matching.net
-
-export OMP_NUM_THREADS=24
-rm -rf matching.net 
-srun -n 1 -c 24 ./bMatching -f $DATA_PATH/converted/com-Friendster.mtx -b 1
-wc -l matching.net
