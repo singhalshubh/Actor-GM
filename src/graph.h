@@ -17,15 +17,45 @@ class graph {
         void readGraph(std::string filename);
         void statsOfGraph(std::string filename);
         void sortAdj();
-        VERTEX _to_local(VERTEX u) {
-            return u/THREADS;
-        }
-        VERTEX _to_global(VERTEX ll_u) {
-            return MYTHREAD + ll_u*THREADS;
-        }
-        uint64_t _owner(VERTEX u) {
-            return u%THREADS;
-        }
+        #if BLOCK_D
+            inline VERTEX _owner(VERTEX u) {
+                VERTEX base = numberOfVertices / THREADS; 
+                VERTEX rem  = numberOfVertices % THREADS;
+                if (u < (base + 1) * rem)
+                    return u / (base + 1);
+                else
+                    return rem + (u - (base + 1) * rem) / base;
+            }
+
+            inline VERTEX _to_local(VERTEX u) {
+                VERTEX base = numberOfVertices / THREADS;
+                VERTEX rem  = numberOfVertices % THREADS;
+                VERTEX r = _owner(u);
+                if (r < rem)
+                    return u - r * (base + 1);
+                else
+                    return u - (rem * (base + 1) + (r - rem) * base);
+            }
+
+            inline VERTEX _to_global(VERTEX ll_u) {
+                VERTEX base = numberOfVertices / THREADS;
+                VERTEX rem  = numberOfVertices % THREADS;
+                if (MYTHREAD < rem)
+                    return MYTHREAD * (base + 1) + ll_u;
+                else
+                    return rem * (base + 1) + (MYTHREAD - rem) * base + ll_u;
+            }
+        #else
+            VERTEX _to_local(VERTEX u) {
+                return u/THREADS;
+            }
+            VERTEX _to_global(VERTEX ll_u) {
+                return MYTHREAD + ll_u*THREADS;
+            }
+            uint64_t _owner(VERTEX u) {
+                return u%THREADS;
+            }
+        #endif
 
 };
 

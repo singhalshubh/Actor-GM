@@ -14,14 +14,19 @@ Install hclib library (hclib::actor) from [hclib-actor.com](https://hclib-actor.
 cd Actor-GM/src/
 make
 ```
-This will generate two executables - `main` and `main_optimized`. `main` uses O(degree) linear search to compute the mate of a vertex, whereas `main_optimized` uses O(1) since the adjacency list of the vertex is sorted while reading.
+We have two flags `-DOPTIMIZED` and `-DBLOCK_D`. `-DOPTIMIZED` is for when instead of using O(degree) linear search to compute the mate of a vertex, we pre-sort the the adjacency list of the vertex and incur only O(1) to find the mate. By default, `main` program uses Cyclic 1D data distribution and enabling `-DBLOCK_D` uses Range/Block 1D distribution. 
+
+This will generate four executables - `main`, `main_optimized`, `block` and `block_optimized`.
 
 ## Experimentation
-Refer to `src/results.log` and `src/results_optimized.log` for our results of the implementation tested on PACE at Georgia Tech, with upto 128 nodes, 16 ppn and 4GB memory per cpu (in exclusive mode).
+Refer to `src/results.log` and `src/results_optimized.log` for our results of the implementation (cyclic 1D)
+and Refer to `src/results_block.log` and `src/results_block_optimized.log` for our results of the implementation (block 1D) tested on PACE at Georgia Tech, with upto 128 nodes, 16 ppn and 4GB memory per cpu (in exclusive mode).
 ```
 cd Actor-GM/src/
 source run_optimized.sh &> results_optimized.log
 source run.sh &> results.log
+source run_block_optimized.sh &> results_block_optimized.log
+source run_block.sh &> results_block.log
 ```
 
 ### Corrected Mel Build and Implementation
