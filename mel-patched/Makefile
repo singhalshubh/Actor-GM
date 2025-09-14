@@ -29,7 +29,7 @@ endif
 OBJ = main.o
 TARGET = match
 
-all: $(TARGET)
+all: clean $(TARGET)
 
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c -o $@ $^

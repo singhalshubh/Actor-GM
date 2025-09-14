@@ -218,7 +218,6 @@ void match::matching(graph &g) {
         if(glb == 0) {
             break;
         }
-        //T0_fprintf(stderr,"%ld\n", glb);
     }
     T0_fprintf(stderr, "Time taken for matching: %.3f\n", wall_seconds() - t1);
 }

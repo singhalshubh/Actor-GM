@@ -1,187 +1,143 @@
-#include <algorithm>
+// rgg_dump_mtx.cpp
+// Write MTX ONLY, "as-is": no symmetry, no dedup, no weight checks.
+// Builds the same RGG as your code (GenerateRGG), then dumps edges directly.
+//
+// mpicxx -O3 -std=c++17 rgg_dump_mtx.cpp -o rgg_dump_mtx
+
+#include <mpi.h>
 #include <cmath>
 #include <cstdint>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <random>
-#include <string>
-#include <utility>
 #include <vector>
-#include <omp.h>
+#include <string>
+#include <sstream>
+#include <iostream>
+#include <iomanip>
+#include <random>
+#include <algorithm>
+#include <cassert>
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <cstdlib>
+#include <fstream>
+#include <limits>
+#include <cstring>
 
-struct Args {
-    uint64_t n = 0;
-    double   d = 0.0;
-    std::string out;
-    uint64_t seed = 42;
-};
+#include "../mel-patched/graph.hpp"
 
-static void die(const char* msg){ std::fprintf(stderr,"FATAL: %s\n",msg); std::exit(1); }
+static void write_mtx_as_is(const Graph* g, const std::string& mtxpath)
+{
+    MPI_Comm comm = g->get_comm();
+    int rank; MPI_Comm_rank(comm, &rank);
 
-static Args parse(int argc, char** argv){
-    Args a;
-    for(int i=1;i<argc;i++){
-        std::string s(argv[i]);
-        auto need = [&](int i){ if(i+1>=argc) die("missing value"); return argv[i+1]; };
-        if(s=="-n"||s=="--num-vertices") a.n = std::strtoull(need(i++),nullptr,10);
-        else if(s=="-d"||s=="--density") a.d = std::atof(need(i++));
-        else if(s=="-o"||s=="--output") a.out = need(i++);
-        else if(s=="-s"||s=="--seed")   a.seed = std::strtoull(need(i++),nullptr,10);
-        else if(s=="-h"||s=="--help"){
-            std::puts("Usage: rgg_omp_mtx -n N -d D -o out.mtx [-s SEED]");
-            std::exit(0);
+    const GraphElem nv   = g->get_nv();
+    const GraphElem lnv  = g->get_lnv();
+    const GraphElem vbase= g->get_base(rank);
+
+    // Count local edges exactly as stored (self-loops, duplicates, directions all preserved)
+    GraphElem lnnz = 0;
+    for (GraphElem i = 0; i < lnv; ++i) {
+        GraphElem e0, e1; g->edge_range(i, e0, e1);
+        lnnz += (e1 - e0);
+    }
+
+    // Global nnz
+    GraphElem nnz = 0;
+    MPI_Allreduce(&lnnz, &nnz, 1, MPI_GRAPH_TYPE, MPI_SUM, comm);
+
+    // Build a single write buffer of my rows
+    // Rough estimate: up to ~40–60 bytes per entry; reserve to avoid re-allocs.
+    std::string mybuf;
+    mybuf.reserve(static_cast<size_t>(std::max<GraphElem>(lnnz, 1)) * 56);
+
+    for (GraphElem i = 0; i < lnv; ++i) {
+        GraphElem e0, e1; g->edge_range(i, e0, e1);
+        const long long u1 = static_cast<long long>(vbase + i) + 1; // 1-based for MTX
+        for (GraphElem e = e0; e < e1; ++e) {
+            const Edge& ed = g->get_edge(e);
+            const long long v1 = static_cast<long long>(ed.tail_) + 1;
+            const double w = static_cast<double>(ed.weight_);
+            char line[128];
+            // Format: "row col weight\n"
+            int n = std::snprintf(line, sizeof(line), "%lld %lld %.12f\n", u1, v1, w);
+            mybuf.append(line, static_cast<size_t>(n));
         }
     }
-    if(a.n<2 || !(a.d>0.0 && a.d<1.0) || a.out.empty())
-        die("need -n >=2, -d in (0,1), -o PATH");
-    return a;
+
+    // Header on rank 0
+    std::ostringstream hdr;
+    if (rank == 0) {
+        hdr << "%%MatrixMarket matrix coordinate real general\n";
+        hdr << nv << " " << nv << " " << nnz << "\n";
+    }
+    std::string header = hdr.str();
+    MPI_Offset header_len = static_cast<MPI_Offset>(header.size());
+
+    // Parallel write: header first, then ordered payload
+    MPI_File fh;
+    MPI_File_open(comm, mtxpath.c_str(),
+                  MPI_MODE_CREATE | MPI_MODE_WRONLY, MPI_INFO_NULL, &fh);
+
+    if (rank == 0 && header_len > 0) {
+        MPI_File_write_at(fh, 0, (void*)header.data(),
+                          static_cast<int>(header_len), MPI_BYTE, MPI_STATUS_IGNORE);
+    }
+    MPI_Barrier(comm);
+
+    // Set view past the header; write in rank order (MPI_File_write_ordered)
+    MPI_File_set_view(fh, header_len, MPI_BYTE, MPI_BYTE, (char*)"native", MPI_INFO_NULL);
+    const int mysz = static_cast<int>(mybuf.size());
+    if (mysz > 0) {
+        MPI_File_write_ordered(fh, (void*)mybuf.data(), mysz, MPI_BYTE, MPI_STATUS_IGNORE);
+    }
+    MPI_File_close(&fh);
 }
 
-int main(int argc, char** argv){
-    Args args = parse(argc, argv);
-    const double r  = std::sqrt(args.d/M_PI);
-    const double r2 = r*r;
+int main(int argc, char** argv)
+{
+    MPI_Init(&argc, &argv);
+    int rank; MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
-    // Generate positions (float to save RAM)
-    std::vector<std::pair<float,float>> pos(args.n);
-    {
-        std::mt19937_64 gen(args.seed);
-        std::uniform_real_distribution<double> U(0.0,1.0);
-        for(uint64_t i=0;i<args.n;i++){
-            pos[i].first  = static_cast<float>(U(gen));
-            pos[i].second = static_cast<float>(U(gen));
+    // args: -n <nv> -o <out_prefix> [--lcg] [--random-pct P]
+    GraphElem nv = 0;
+    std::string out_prefix = "rgg";
+    bool use_lcg = false;
+    GraphWeight random_pct = 0.0;
+
+    for (int i = 1; i < argc; ++i) {
+        std::string a = argv[i];
+        if ((a == "-n" || a == "--nv") && i + 1 < argc) {
+            nv = (GraphElem) std::atoll(argv[++i]);
+        } else if ((a == "-o" || a == "--out") && i + 1 < argc) {
+            out_prefix = argv[++i];
+        } else if (a == "--lcg") {
+            use_lcg = true;
+        } else if (a == "--random-pct" && i + 1 < argc) {
+            random_pct = (GraphWeight) std::atof(argv[++i]);
         }
     }
 
-    // Grid (cell size = r)
-    const int nx = std::max(1, (int)std::ceil(1.0 / r));
-    const int ny = nx;
-    const double cell = 1.0 / nx;
-
-    auto cell_id = [&](float x, float y)->int{
-        int ix = std::min(nx-1, std::max(0, (int)std::floor(x / cell)));
-        int iy = std::min(ny-1, std::max(0, (int)std::floor(y / cell)));
-        return iy*nx + ix;
-    };
-
-    // Bin points into cells
-    std::vector<std::vector<uint32_t>> cells(nx*ny);
-    for(uint32_t i=0;i<pos.size();++i) cells[cell_id(pos[i].first,pos[i].second)].push_back(i);
-
-    // Helper: iterate neighbor cells with lexicographic ordering to avoid double checks
-    auto neighbor_cells = [&](int cx, int cy, std::vector<std::pair<int,int>>& out){
-        out.clear();
-        for(int dy=-1; dy<=1; ++dy){
-            for(int dx=-1; dx<=1; ++dx){
-                int nx_ = cx+dx, ny_ = cy+dy;
-                if(nx_<0||nx_>=nx||ny_<0||ny_>=ny) continue;
-                if(ny_ < cy) continue;
-                if(ny_==cy && nx_ < cx) continue;
-                out.emplace_back(nx_,ny_);
-            }
-        }
-    };
-
-    // Pass 1: count undirected edges (u<v)
-    unsigned long long m = 0ULL;
-    #pragma omp parallel
-    {
-        std::vector<std::pair<int,int>> neigh;
-        #pragma omp for reduction(+:m) schedule(static)
-        for(int cy=0; cy<ny; ++cy){
-            for(int cx=0; cx<nx; ++cx){
-                const auto& A = cells[cy*nx+cx];
-                neighbor_cells(cx,cy,neigh);
-                for(auto [nx0,ny0] : neigh){
-                    const auto& B = cells[ny0*nx+nx0];
-                    if (&A == &B){
-                        for(size_t ia=0; ia<A.size(); ++ia){
-                            const uint32_t i = A[ia];
-                            const float xi = pos[i].first, yi = pos[i].second;
-                            for(size_t jb=ia+1; jb<B.size(); ++jb){
-                                const uint32_t j = B[jb];
-                                const float dx = xi - pos[j].first;
-                                const float dy = yi - pos[j].second;
-                                if ((double)dx*dx + (double)dy*dy <= r2) m += 1ULL;
-                            }
-                        }
-                    } else {
-                        for(size_t ia=0; ia<A.size(); ++ia){
-                            const uint32_t i = A[ia];
-                            const float xi = pos[i].first, yi = pos[i].second;
-                            for(size_t jb=0; jb<B.size(); ++jb){
-                                const uint32_t j = B[jb];
-                                const float dx = xi - pos[j].first;
-                                const float dy = yi - pos[j].second;
-                                if ((double)dx*dx + (double)dy*dy <= r2) m += 1ULL;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    if (nv <= 0) {
+        if (rank == 0)
+            std::fprintf(stderr,
+                "Usage: %s -n <num_vertices> -o <out_prefix> [--lcg] [--random-pct P]\n",
+                argv[0]);
+        MPI_Abort(MPI_COMM_WORLD, 1);
     }
-    const unsigned long long nnz = 2ULL * m;
 
-    // Pass 2: write header + edges (both directions)
-    std::FILE* f = std::fopen(args.out.c_str(),"w");
-    if(!f) die("failed to open output");
-    std::fprintf(f,"%%%%MatrixMarket matrix coordinate real general\n");
-    std::fprintf(f,"%llu %llu %llu\n",
-                 (unsigned long long)args.n,
-                 (unsigned long long)args.n,
-                 nnz);
+    // Generate the same RGG, with Euclidean weights (unitEdgeWeight=false)
+    GenerateRGG gen(nv, MPI_COMM_WORLD);
+    Graph* g = gen.generate(/*isLCG=*/use_lcg, /*unitEdgeWeight=*/false,
+                            /*randomEdgePercent=*/random_pct);
 
-    // Single-threaded write for simplicity (I/O bound anyway)
-    std::vector<std::pair<int,int>> neigh;
-    for(int cy=0; cy<ny; ++cy){
-        for(int cx=0; cx<nx; ++cx){
-            const auto& A = cells[cy*nx+cx];
-            neighbor_cells(cx,cy,neigh);
-            for(auto [nx0,ny0] : neigh){
-                const auto& B = cells[ny0*nx+nx0];
-                if (&A == &B){
-                    for(size_t ia=0; ia<A.size(); ++ia){
-                        const uint32_t i = A[ia];
-                        const float xi = pos[i].first, yi = pos[i].second;
-                        for(size_t jb=ia+1; jb<B.size(); ++jb){
-                            const uint32_t j = B[jb];
-                            const float dx = xi - pos[j].first;
-                            const float dy = yi - pos[j].second;
-                            const double d2 = (double)dx*dx + (double)dy*dy;
-                            if (d2 <= r2){
-                                const double w = std::sqrt(d2);
-                                const uint64_t u = (uint64_t)i + 1, v = (uint64_t)j + 1;
-                                std::fprintf(f, "%llu %llu %.9g\n%llu %llu %.9g\n",
-                                             (unsigned long long)u, (unsigned long long)v, w,
-                                             (unsigned long long)v, (unsigned long long)u, w);
-                            }
-                        }
-                    }
-                } else {
-                    for(size_t ia=0; ia<A.size(); ++ia){
-                        const uint32_t i = A[ia];
-                        const float xi = pos[i].first, yi = pos[i].second;
-                        for(size_t jb=0; jb<B.size(); ++jb){
-                            const uint32_t j = B[jb];
-                            const float dx = xi - pos[j].first;
-                            const float dy = yi - pos[j].second;
-                            const double d2 = (double)dx*dx + (double)dy*dy;
-                            if (d2 <= r2){
-                                const double w = std::sqrt(d2);
-                                const uint64_t u = (uint64_t)std::min(i,j) + 1;
-                                const uint64_t v = (uint64_t)std::max(i,j) + 1;
-                                std::fprintf(f, "%llu %llu %.9g\n%llu %llu %.9g\n",
-                                             (unsigned long long)u, (unsigned long long)v, w,
-                                             (unsigned long long)v, (unsigned long long)u, w);
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    const std::string mtx = out_prefix + ".mtx";
+    write_mtx_as_is(g, mtx);
+
+    if (rank == 0) {
+        std::cout << "Wrote MTX (as-is): " << mtx << std::endl;
     }
-    std::fclose(f);
+
+    delete g;
+    MPI_Finalize();
     return 0;
 }

@@ -1,0 +1,842 @@
+== cage15.bin | 4 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 18884256
+Average number of edges: 1.54999e+06
+Expected value of X^2: 2.3554e+13
+Variance: 2.11516e+13
+Standard deviation: 4.59908e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.3284
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 93.7221 on 64 processes.
+Validation SUCCESS.
+
+
+== cage15.bin | 8 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 9768337
+Average number of edges: 774996
+Expected value of X^2: 6.06317e+12
+Variance: 5.46256e+12
+Standard deviation: 2.33721e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.863952
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 34.5255 on 128 processes.
+Validation SUCCESS.
+
+
+== cage15.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 5212272
+Average number of edges: 387498
+Expected value of X^2: 1.5406e+12
+Variance: 1.39045e+12
+Standard deviation: 1.17917e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.543072
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 11.1355 on 256 processes.
+Validation SUCCESS.
+
+
+== cage15.bin | 32 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 2736465
+Average number of edges: 193749
+Expected value of X^2: 3.8903e+11
+Variance: 3.51491e+11
+Standard deviation: 592867
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.448368
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 3.53187 on 512 processes.
+Validation SUCCESS.
+
+
+== cage15.bin | 64 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 1543726
+Average number of edges: 96874.6
+Expected value of X^2: 9.83425e+10
+Variance: 8.89578e+10
+Standard deviation: 298258
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.372076
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 1.5557 on 1024 processes.
+Validation SUCCESS.
+
+
+== cage15.bin | 128 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 52177205
+Number of edges: 99199551
+Maximum number of edges: 827189
+Average number of edges: 48437.3
+Expected value of X^2: 2.47191e+10
+Variance: 2.2373e+10
+Standard deviation: 149576
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.475295
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 0.964409 on 2048 processes.
+Validation SUCCESS.
+
+
+== HV15R.bin | 4 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 326732307
+Average number of edges: 5.10519e+06
+Expected value of X^2: 1.66803e+15
+Variance: 1.64197e+15
+Standard deviation: 4.05212e+07
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 11.859
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 36.2773 on 64 processes.
+Validation SUCCESS.
+
+
+== HV15R.bin | 8 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 209977392
+Average number of edges: 2.5526e+06
+Expected value of X^2: 4.50955e+14
+Variance: 4.44439e+14
+Standard deviation: 2.10817e+07
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 6.48165
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 63.9089 on 128 processes.
+Validation SUCCESS.
+
+
+== HV15R.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 105484640
+Average number of edges: 1.2763e+06
+Expected value of X^2: 1.27898e+14
+Variance: 1.26269e+14
+Standard deviation: 1.12369e+07
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 3.96102
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 31.518 on 256 processes.
+Validation SUCCESS.
+
+
+== HV15R.bin | 32 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 53525786
+Average number of edges: 638149
+Expected value of X^2: 3.22003e+13
+Variance: 3.1793e+13
+Standard deviation: 5.63853e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 2.77677
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 20.0554 on 512 processes.
+Validation SUCCESS.
+
+
+== HV15R.bin | 64 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 28259263
+Average number of edges: 319075
+Expected value of X^2: 8.15519e+12
+Variance: 8.05338e+12
+Standard deviation: 2.83785e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 2.39542
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 10.2227 on 1024 processes.
+Validation SUCCESS.
+
+
+== HV15R.bin | 128 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 164374738
+Number of edges: 326732307
+Maximum number of edges: 14748010
+Average number of edges: 159537
+Expected value of X^2: 2.07127e+12
+Variance: 2.04582e+12
+Standard deviation: 1.43032e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.34081
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 4.70321 on 2048 processes.
+Validation SUCCESS.
+
+
+== graph500-scale21-ef16_adj.bin | 4 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1243072
+Number of edges: 63463300
+Maximum number of edges: 3382448
+Average number of edges: 991614
+Expected value of X^2: 1.38482e+12
+Variance: 4.01521e+11
+Standard deviation: 633657
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.64795
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 20.2909 on 64 processes.
+Validation SUCCESS.
+
+
+== graph500-scale21-ef16_adj.bin | 8 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1243072
+Number of edges: 63463300
+Maximum number of edges: 2465919
+Average number of edges: 495807
+Expected value of X^2: 3.93516e+11
+Variance: 1.47691e+11
+Standard deviation: 384306
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.286536
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 14.8116 on 128 processes.
+Validation SUCCESS.
+
+
+== graph500-scale21-ef16_adj.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1243072
+Number of edges: 63463300
+Maximum number of edges: 1354090
+Average number of edges: 247904
+Expected value of X^2: 1.07722e+11
+Variance: 4.62661e+10
+Standard deviation: 215096
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.191675
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 11.8175 on 256 processes.
+Validation SUCCESS.
+
+== graph500-scale22-ef16_adj.bin | 4 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2393285
+Number of edges: 128194008
+Maximum number of edges: 7296808
+Average number of edges: 2.00303e+06
+Expected value of X^2: 5.80754e+12
+Variance: 1.7954e+12
+Standard deviation: 1.33993e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.833386
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 62.7146 on 64 processes.
+Validation SUCCESS.
+
+
+== graph500-scale22-ef16_adj.bin | 8 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2393285
+Number of edges: 128194008
+Maximum number of edges: 5348843
+Average number of edges: 1.00152e+06
+Expected value of X^2: 1.65973e+12
+Variance: 6.567e+11
+Standard deviation: 810370
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.603688
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 36.23 on 128 processes.
+Validation SUCCESS.
+
+
+== graph500-scale22-ef16_adj.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2393285
+Number of edges: 128194008
+Maximum number of edges: 3866739
+Average number of edges: 500758
+Expected value of X^2: 4.76583e+11
+Variance: 2.25824e+11
+Standard deviation: 475210
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.718245
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 33.2168 on 256 processes.
+Validation SUCCESS.
+
+
+== graph500-scale23-ef16_adj.bin | 4 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 4606314
+Number of edges: 258501410
+Maximum number of edges: 14241027
+Average number of edges: 4.03908e+06
+Expected value of X^2: 2.28865e+13
+Variance: 6.57234e+12
+Standard deviation: 2.56366e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.27268
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 184.303 on 64 processes.
+Validation SUCCESS.
+
+
+== graph500-scale23-ef16_adj.bin | 8 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 4606314
+Number of edges: 258501410
+Maximum number of edges: 8658926
+Average number of edges: 2.01954e+06
+Expected value of X^2: 6.50691e+12
+Variance: 2.42836e+12
+Standard deviation: 1.55832e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.866758
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 152.553 on 128 processes.
+Validation SUCCESS.
+
+
+== graph500-scale23-ef16_adj.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 4606314
+Number of edges: 258501410
+Maximum number of edges: 6874376
+Average number of edges: 1.00977e+06
+Expected value of X^2: 1.85626e+12
+Variance: 8.36622e+11
+Standard deviation: 914671
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.936482
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 86.6672 on 256 processes.
+Validation SUCCESS.
+
+
+== graph500-scale24-ef16_adj.bin | 4 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 8860450
+Number of edges: 520523686
+Maximum number of edges: 26377330
+Average number of edges: 8.13318e+06
+Expected value of X^2: 9.16636e+13
+Variance: 2.55149e+13
+Standard deviation: 5.05123e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 2.33647
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 353.169 on 64 processes.
+Validation SUCCESS.
+
+
+== graph500-scale24-ef16_adj.bin | 8 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 8860450
+Number of edges: 520523686
+Maximum number of edges: 19376747
+Average number of edges: 4.06659e+06
+Expected value of X^2: 2.60729e+13
+Variance: 9.53577e+12
+Standard deviation: 3.088e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.76307
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 296.442 on 128 processes.
+Validation SUCCESS.
+
+
+== graph500-scale24-ef16_adj.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 8860450
+Number of edges: 520523686
+Maximum number of edges: 13816291
+Average number of edges: 2.0333e+06
+Expected value of X^2: 7.59288e+12
+Variance: 3.45859e+12
+Standard deviation: 1.85973e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.5897
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 246.26 on 256 processes.
+Validation SUCCESS.
+== com-Orkut.bin | 4 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 3072441
+Number of edges: 234370166
+Maximum number of edges: 11751179
+Average number of edges: 3.66203e+06
+Expected value of X^2: 1.7341e+13
+Variance: 3.93052e+12
+Standard deviation: 1.98255e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 1.53003
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 29.6119 on 64 processes.
+Validation SUCCESS.
+
+
+== com-Orkut.bin | 8 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 3072441
+Number of edges: 234370166
+Maximum number of edges: 6799290
+Average number of edges: 1.83102e+06
+Expected value of X^2: 4.48928e+12
+Variance: 1.13665e+12
+Standard deviation: 1.06614e+06
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.485837
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 24.2534 on 128 processes.
+Validation SUCCESS.
+
+
+== com-Orkut.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 3072441
+Number of edges: 234370166
+Maximum number of edges: 4499690
+Average number of edges: 915508
+Expected value of X^2: 1.15457e+12
+Variance: 3.16416e+11
+Standard deviation: 562509
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.413856
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 26.4562 on 256 processes.
+Validation SUCCESS.
+
+
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.bin | 4 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1000001
+Number of edges: 47562866
+Maximum number of edges: 746328
+Average number of edges: 743170
+Expected value of X^2: 5.52303e+11
+Variance: 1.56621e+06
+Standard deviation: 1251.48
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.769329
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 19.1159 on 64 processes.
+Validation SUCCESS.
+
+
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.bin | 8 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1000001
+Number of edges: 47562866
+Maximum number of edges: 374267
+Average number of edges: 371585
+Expected value of X^2: 1.38076e+11
+Variance: 715744
+Standard deviation: 846.017
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.483792
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 9.24636 on 128 processes.
+Validation SUCCESS.
+
+
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1000001
+Number of edges: 47562866
+Maximum number of edges: 187653
+Average number of edges: 185792
+Expected value of X^2: 3.45192e+10
+Variance: 408546
+Standard deviation: 639.176
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.16586
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 14.9811 on 256 processes.
+Validation SUCCESS.
+
+== static_highOverlap_lowBlockSizeVar_5000000_nodes.bin | 4 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 5000001
+Number of edges: 237529656
+Maximum number of edges: 3718163
+Average number of edges: 3.7114e+06
+Expected value of X^2: 1.37745e+13
+Variance: 9.05318e+06
+Standard deviation: 3008.85
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.56051
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 383.3 on 64 processes.
+Validation SUCCESS.
+
+
+== static_highOverlap_lowBlockSizeVar_5000000_nodes.bin | 8 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 5000001
+Number of edges: 237529656
+Maximum number of edges: 1860672
+Average number of edges: 1.8557e+06
+Expected value of X^2: 3.44363e+12
+Variance: 4.34844e+06
+Standard deviation: 2085.29
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.439965
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 97.9901 on 128 processes.
+Validation SUCCESS.
+
+
+== static_highOverlap_lowBlockSizeVar_5000000_nodes.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 5000001
+Number of edges: 237529656
+Maximum number of edges: 932516
+Average number of edges: 927850
+Expected value of X^2: 8.60908e+11
+Variance: 2.37186e+06
+Standard deviation: 1540.08
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 0.35371
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 31.6834 on 256 processes.
+Validation SUCCESS.
+
+
+== rgg_small.bin | 8 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 536870912
+Number of edges: 6643450680
+Maximum number of edges: 51930415
+Average number of edges: 5.1902e+07
+Expected value of X^2: 2.69381e+15
+Variance: 3.53223e+08
+Standard deviation: 18794.2
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 15.5775
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 163.391 on 128 processes.
+Validation SUCCESS.
+
+
+== rgg_small.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 536870912
+Number of edges: 6643450680
+Maximum number of edges: 25970311
+Average number of edges: 2.5951e+07
+Expected value of X^2: 6.73454e+14
+Variance: 1.79672e+08
+Standard deviation: 13404.2
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 13.6852
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 75.294 on 256 processes.
+Validation SUCCESS.
+
+
+== rgg_small.bin | 32 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 536870912
+Number of edges: 6643450680
+Maximum number of edges: 12992809
+Average number of edges: 1.29755e+07
+Expected value of X^2: 1.68363e+14
+Variance: 7.95617e+07
+Standard deviation: 8919.74
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 11.7427
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 38.4772 on 512 processes.
+Validation SUCCESS.
+
+
+== rgg_small.bin | 64 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 536870912
+Number of edges: 6643450680
+Maximum number of edges: 6499896
+Average number of edges: 6.48774e+06
+Expected value of X^2: 4.20909e+13
+Variance: 4.18465e+07
+Standard deviation: 6468.88
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 10.4968
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 16.1271 on 1024 processes.
+Validation SUCCESS.
+
+
+== rgg_small.bin | 128 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 536870912
+Number of edges: 6643450680
+Maximum number of edges: 3253053
+Average number of edges: 3.24387e+06
+Expected value of X^2: 1.05227e+13
+Variance: 2.13289e+07
+Standard deviation: 4618.33
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 10.0868
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 6.22372 on 2048 processes.
+Validation SUCCESS.
+
+
+== rgg_medium.bin | 8 nodes ==
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1073741824
+Number of edges: 13579379686
+Maximum number of edges: 106127510
+Average number of edges: 1.06089e+08
+Expected value of X^2: 1.12549e+16
+Variance: 7.18645e+08
+Standard deviation: 26807.6
+-alue of X^2: 1.12549e+16
+Variance: 7.18645e+08
+Standard deviation: 26807.6
+-------------------------------------------------
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 541.24 on 128 processes.
+Validation SUCCESS.
+
+
+== rgg_medium.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1073741824
+Number of edges: 13579379686
+Maximum number of edges: 53074457
+Average number of edges: 5.30445e+07
+Expected value of X^2: 2.81371e+15
+Variance: 3.49234e+08
+Standard deviation: 18687.8
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 28.2665
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 210.693 on 256 processes.
+Validation SUCCESS.
+
+
+== rgg_medium.bin | 32 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1073741824
+Number of edges: 13579379686
+Maximum number of edges: 26546775
+Average number of edges: 2.65222e+07
+Expected value of X^2: 7.03429e+14
+Variance: 1.7943e+08
+Standard deviation: 13395.2
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 24.6255
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 118.287 on 512 processes.
+Validation SUCCESS.
+
+
+== rgg_medium.bin | 64 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1073741824
+Number of edges: 13579379686
+Maximum number of edges: 13282062
+Average number of edges: 1.32611e+07
+Expected value of X^2: 1.75857e+14
+Variance: 9.29589e+07
+Standard deviation: 9641.52
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 22.2242
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 52.4121 on 1024 processes.
+Validation SUCCESS.
+
+
+== rgg_medium.bin | 128 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 1073741824
+Number of edges: 13579379686
+Maximum number of edges: 6644277
+Average number of edges: 6.63056e+06
+Expected value of X^2: 4.39643e+13
+Variance: 4.79841e+07
+Standard deviation: 6927.05
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 2.46096
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 23.9711 on 2048 processes.
+Validation SUCCESS.
+
+
+== rgg_big.bin | 16 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2147483648
+Number of edges: 27566246252
+Maximum number of edges: 107731385
+Average number of edges: 1.07681e+08
+Expected value of X^2: 1.15951e+16
+Variance: 6.73086e+08
+Standard deviation: 25943.9
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 72.6198
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 757.637 on 256 processes.
+Validation SUCCESS.
+
+
+== rgg_big.bin | 32 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2147483648
+Number of edges: 27566246252
+Maximum number of edges: 53881729
+Average number of edges: 5.38403e+07
+Expected value of X^2: 2.89878e+15
+Variance: 3.73353e+08
+Standard deviation: 19322.4
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 63.4884
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 363.338 on 512 processes.
+Validation SUCCESS.
+
+
+== rgg_big.bin | 64 nodes ==
+
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2147483648
+Number of edges: 27566246252
+Maximum number of edges: 26946854
+Average number of edges: 2.69202e+07
+Expected value of X^2: 7.24695e+14
+Variance: 1.93444e+08
+Standard deviation: 13908.4
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 58.7063
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 174.342 on 1024 processes.
+Validation SUCCESS.
+
+
+== rgg_big.bin | 128 nodes ==
+
+-------------------------------------------------------
+Graph edge distribution characteristics
+-------------------------------------------------------
+Number of vertices: 2147483648
+Number of edges: 27566246252
+Maximum number of edges: 13480082
+Average number of edges: 1.34601e+07
+Expected value of X^2: 1.81174e+14
+Variance: 9.8411e+07
+Standard deviation: 9920.23
+-------------------------------------------------------
+Time to read input file and create distributed graph (in s): 48.6043
+MPI-3 RMA: Execution time (in s) for maximal edge matching: 78.3269 on 2048 processes.
+Validation SUCCESS.

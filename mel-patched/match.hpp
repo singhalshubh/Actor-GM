@@ -513,7 +513,7 @@ class MaxEdgeMatchRMAFix
                 }    
                 MPI_Allreduce(MPI_IN_PLACE, &count, 1, MPI_GRAPH_TYPE, 
                         MPI_SUM, MPI_COMM_WORLD);
-                if(rank_ == 0) std::cout << count << std::endl;
+                //if(rank_ == 0) std::cout << count << std::endl;
 
                 if (count == 0)
                     break;

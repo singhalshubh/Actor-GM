@@ -1,4 +1,4 @@
-== cage15.mtx | 4 cores ==
+== cage15.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 2.897 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
@@ -8,7 +8,7 @@ Sorting el for all G(V) takes 0.041 seconds
 Time taken for matching: 0.597
 
 
-== cage15.mtx | 8 cores ==
+== cage15.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.987 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
@@ -18,7 +18,7 @@ Sorting el for all G(V) takes 0.022 seconds
 Time taken for matching: 0.243
 
 
-== cage15.mtx | 16 cores ==
+== cage15.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.519 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
@@ -28,7 +28,7 @@ Sorting el for all G(V) takes 0.011 seconds
 Time taken for matching: 0.174
 
 
-== cage15.mtx | 32 cores ==
+== cage15.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.496 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
@@ -38,7 +38,7 @@ Sorting el for all G(V) takes 0.005 seconds
 Time taken for matching: 0.267
 
 
-== cage15.mtx | 64 cores ==
+== cage15.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.235 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
@@ -48,7 +48,7 @@ Sorting el for all G(V) takes 0.003 seconds
 Time taken for matching: 0.532
 
 
-== cage15.mtx | 128 cores ==
+== cage15.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.695 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/cage15.mtx
@@ -58,7 +58,7 @@ Sorting el for all G(V) takes 0.001 seconds
 Time taken for matching: 0.475
 
 
-== HV15R.mtx | 4 cores ==
+== HV15R.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 7.086 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
@@ -68,7 +68,7 @@ Sorting el for all G(V) takes 0.238 seconds
 Time taken for matching: 4.118
 
 
-== HV15R.mtx | 8 cores ==
+== HV15R.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 2.903 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
@@ -78,7 +78,7 @@ Sorting el for all G(V) takes 0.119 seconds
 Time taken for matching: 2.378
 
 
-== HV15R.mtx | 16 cores ==
+== HV15R.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.564 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
@@ -88,7 +88,7 @@ Sorting el for all G(V) takes 0.060 seconds
 Time taken for matching: 1.627
 
 
-== HV15R.mtx | 32 cores ==
+== HV15R.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.006 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
@@ -98,7 +98,7 @@ Sorting el for all G(V) takes 0.030 seconds
 Time taken for matching: 1.372
 
 
-== HV15R.mtx | 64 cores ==
+== HV15R.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.623 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
@@ -108,7 +108,7 @@ Sorting el for all G(V) takes 0.015 seconds
 Time taken for matching: 1.834
 
 
-== HV15R.mtx | 128 cores ==
+== HV15R.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.856 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/HV15R.mtx
@@ -118,7 +118,7 @@ Sorting el for all G(V) takes 0.007 seconds
 Time taken for matching: 2.286
 
 
-== graph500-scale21-ef16_adj.mtx | 4 cores ==
+== graph500-scale21-ef16_adj.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 2.619 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
@@ -128,7 +128,7 @@ Sorting el for all G(V) takes 0.066 seconds
 Time taken for matching: 0.497
 
 
-== graph500-scale21-ef16_adj.mtx | 8 cores ==
+== graph500-scale21-ef16_adj.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.782 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
@@ -138,7 +138,7 @@ Sorting el for all G(V) takes 0.038 seconds
 Time taken for matching: 0.436
 
 
-== graph500-scale21-ef16_adj.mtx | 16 cores ==
+== graph500-scale21-ef16_adj.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.483 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
@@ -148,7 +148,7 @@ Sorting el for all G(V) takes 0.026 seconds
 Time taken for matching: 0.642
 
 
-== graph500-scale21-ef16_adj.mtx | 32 cores ==
+== graph500-scale21-ef16_adj.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.435 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
@@ -158,7 +158,7 @@ Sorting el for all G(V) takes 0.019 seconds
 Time taken for matching: 0.606
 
 
-== graph500-scale21-ef16_adj.mtx | 64 cores ==
+== graph500-scale21-ef16_adj.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.230 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
@@ -168,7 +168,7 @@ Sorting el for all G(V) takes 0.015 seconds
 Time taken for matching: 0.862
 
 
-== graph500-scale21-ef16_adj.mtx | 128 cores ==
+== graph500-scale21-ef16_adj.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.298 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale21-ef16_adj.mtx
@@ -178,7 +178,7 @@ Sorting el for all G(V) takes 0.013 seconds
 Time taken for matching: 1.146
 
 
-== graph500-scale22-ef16_adj.mtx | 4 cores ==
+== graph500-scale22-ef16_adj.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 4.377 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
@@ -188,7 +188,7 @@ Sorting el for all G(V) takes 0.123 seconds
 Time taken for matching: 0.880
 
 
-== graph500-scale22-ef16_adj.mtx | 8 cores ==
+== graph500-scale22-ef16_adj.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.996 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
@@ -198,7 +198,7 @@ Sorting el for all G(V) takes 0.068 seconds
 Time taken for matching: 0.880
 
 
-== graph500-scale22-ef16_adj.mtx | 16 cores ==
+== graph500-scale22-ef16_adj.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.833 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
@@ -208,7 +208,7 @@ Sorting el for all G(V) takes 0.043 seconds
 Time taken for matching: 0.701
 
 
-== graph500-scale22-ef16_adj.mtx | 32 cores ==
+== graph500-scale22-ef16_adj.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.619 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
@@ -218,7 +218,7 @@ Sorting el for all G(V) takes 0.032 seconds
 Time taken for matching: 0.937
 
 
-== graph500-scale22-ef16_adj.mtx | 64 cores ==
+== graph500-scale22-ef16_adj.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.339 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
@@ -228,7 +228,7 @@ Sorting el for all G(V) takes 0.023 seconds
 Time taken for matching: 0.919
 
 
-== graph500-scale22-ef16_adj.mtx | 128 cores ==
+== graph500-scale22-ef16_adj.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.674 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale22-ef16_adj.mtx
@@ -238,7 +238,7 @@ Sorting el for all G(V) takes 0.020 seconds
 Time taken for matching: 0.849
 
 
-== graph500-scale23-ef16_adj.mtx | 4 cores ==
+== graph500-scale23-ef16_adj.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 7.664 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
@@ -248,7 +248,7 @@ Sorting el for all G(V) takes 0.254 seconds
 Time taken for matching: 1.414
 
 
-== graph500-scale23-ef16_adj.mtx | 8 cores ==
+== graph500-scale23-ef16_adj.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 3.066 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
@@ -258,7 +258,7 @@ Sorting el for all G(V) takes 0.143 seconds
 Time taken for matching: 1.359
 
 
-== graph500-scale23-ef16_adj.mtx | 16 cores ==
+== graph500-scale23-ef16_adj.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.595 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
@@ -268,7 +268,7 @@ Sorting el for all G(V) takes 0.081 seconds
 Time taken for matching: 2.025
 
 
-== graph500-scale23-ef16_adj.mtx | 32 cores ==
+== graph500-scale23-ef16_adj.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 2.140 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
@@ -278,7 +278,7 @@ Sorting el for all G(V) takes 0.053 seconds
 Time taken for matching: 2.447
 
 
-== graph500-scale23-ef16_adj.mtx | 64 cores ==
+== graph500-scale23-ef16_adj.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.583 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
@@ -288,7 +288,7 @@ Sorting el for all G(V) takes 0.041 seconds
 Time taken for matching: 1.258
 
 
-== graph500-scale23-ef16_adj.mtx | 128 cores ==
+== graph500-scale23-ef16_adj.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.825 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale23-ef16_adj.mtx
@@ -298,7 +298,7 @@ Sorting el for all G(V) takes 0.033 seconds
 Time taken for matching: 1.340
 
 
-== graph500-scale24-ef16_adj.mtx | 4 cores ==
+== graph500-scale24-ef16_adj.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 15.104 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
@@ -308,7 +308,7 @@ Sorting el for all G(V) takes 0.544 seconds
 Time taken for matching: 4.019
 
 
-== graph500-scale24-ef16_adj.mtx | 8 cores ==
+== graph500-scale24-ef16_adj.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 5.753 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
@@ -318,7 +318,7 @@ Sorting el for all G(V) takes 0.272 seconds
 Time taken for matching: 2.156
 
 
-== graph500-scale24-ef16_adj.mtx | 16 cores ==
+== graph500-scale24-ef16_adj.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 2.971 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
@@ -328,7 +328,7 @@ Sorting el for all G(V) takes 0.169 seconds
 Time taken for matching: 3.859
 
 
-== graph500-scale24-ef16_adj.mtx | 32 cores ==
+== graph500-scale24-ef16_adj.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.754 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
@@ -338,7 +338,7 @@ Sorting el for all G(V) takes 0.105 seconds
 Time taken for matching: 4.497
 
 
-== graph500-scale24-ef16_adj.mtx | 64 cores ==
+== graph500-scale24-ef16_adj.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.057 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
@@ -348,7 +348,7 @@ Sorting el for all G(V) takes 0.074 seconds
 Time taken for matching: 3.873
 
 
-== graph500-scale24-ef16_adj.mtx | 128 cores ==
+== graph500-scale24-ef16_adj.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.268 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/graph500-scale24-ef16_adj.mtx
@@ -358,7 +358,7 @@ Sorting el for all G(V) takes 0.060 seconds
 Time taken for matching: 5.138
 
 
-== kmer_P1a.mtx | 4 cores ==
+== kmer_P1a.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 6.550 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
@@ -368,7 +368,7 @@ Sorting el for all G(V) takes 0.074 seconds
 Time taken for matching: 1.558
 
 
-== kmer_P1a.mtx | 8 cores ==
+== kmer_P1a.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 2.714 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
@@ -378,7 +378,7 @@ Sorting el for all G(V) takes 0.040 seconds
 Time taken for matching: 0.937
 
 
-== kmer_P1a.mtx | 16 cores ==
+== kmer_P1a.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.443 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
@@ -388,7 +388,7 @@ Sorting el for all G(V) takes 0.026 seconds
 Time taken for matching: 0.524
 
 
-== kmer_P1a.mtx | 32 cores ==
+== kmer_P1a.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.977 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
@@ -398,7 +398,7 @@ Sorting el for all G(V) takes 0.014 seconds
 Time taken for matching: 0.444
 
 
-== kmer_P1a.mtx | 64 cores ==
+== kmer_P1a.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.524 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
@@ -408,7 +408,7 @@ Sorting el for all G(V) takes 0.007 seconds
 Time taken for matching: 0.305
 
 
-== kmer_P1a.mtx | 128 cores ==
+== kmer_P1a.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.389 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_P1a.mtx
@@ -418,7 +418,7 @@ Sorting el for all G(V) takes 0.004 seconds
 Time taken for matching: 0.284
 
 
-== kmer_U1a.mtx | 4 cores ==
+== kmer_U1a.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 3.070 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
@@ -428,7 +428,7 @@ Sorting el for all G(V) takes 0.033 seconds
 Time taken for matching: 0.649
 
 
-== kmer_U1a.mtx | 8 cores ==
+== kmer_U1a.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.326 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
@@ -438,7 +438,7 @@ Sorting el for all G(V) takes 0.018 seconds
 Time taken for matching: 0.379
 
 
-== kmer_U1a.mtx | 16 cores ==
+== kmer_U1a.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.695 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
@@ -448,7 +448,7 @@ Sorting el for all G(V) takes 0.011 seconds
 Time taken for matching: 0.193
 
 
-== kmer_U1a.mtx | 32 cores ==
+== kmer_U1a.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.585 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
@@ -458,7 +458,7 @@ Sorting el for all G(V) takes 0.006 seconds
 Time taken for matching: 0.225
 
 
-== kmer_U1a.mtx | 64 cores ==
+== kmer_U1a.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.296 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
@@ -468,7 +468,7 @@ Sorting el for all G(V) takes 0.003 seconds
 Time taken for matching: 0.106
 
 
-== kmer_U1a.mtx | 128 cores ==
+== kmer_U1a.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.295 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_U1a.mtx
@@ -478,7 +478,7 @@ Sorting el for all G(V) takes 0.001 seconds
 Time taken for matching: 0.101
 
 
-== kmer_V1r.mtx | 4 cores ==
+== kmer_V1r.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 8.488 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
@@ -488,7 +488,7 @@ Sorting el for all G(V) takes 0.118 seconds
 Time taken for matching: 2.029
 
 
-== kmer_V1r.mtx | 8 cores ==
+== kmer_V1r.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 4.110 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
@@ -498,7 +498,7 @@ Sorting el for all G(V) takes 0.064 seconds
 Time taken for matching: 1.154
 
 
-== kmer_V1r.mtx | 16 cores ==
+== kmer_V1r.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 2.226 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
@@ -508,7 +508,7 @@ Sorting el for all G(V) takes 0.040 seconds
 Time taken for matching: 0.566
 
 
-== kmer_V1r.mtx | 32 cores ==
+== kmer_V1r.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.393 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
@@ -518,7 +518,7 @@ Sorting el for all G(V) takes 0.023 seconds
 Time taken for matching: 0.447
 
 
-== kmer_V1r.mtx | 64 cores ==
+== kmer_V1r.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.780 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
@@ -528,7 +528,7 @@ Sorting el for all G(V) takes 0.012 seconds
 Time taken for matching: 0.324
 
 
-== kmer_V1r.mtx | 128 cores ==
+== kmer_V1r.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.551 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V1r.mtx
@@ -538,7 +538,7 @@ Sorting el for all G(V) takes 0.006 seconds
 Time taken for matching: 0.154
 
 
-== kmer_V2a.mtx | 4 cores ==
+== kmer_V2a.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 2.831 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
@@ -548,7 +548,7 @@ Sorting el for all G(V) takes 0.029 seconds
 Time taken for matching: 0.584
 
 
-== kmer_V2a.mtx | 8 cores ==
+== kmer_V2a.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.175 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
@@ -558,7 +558,7 @@ Sorting el for all G(V) takes 0.015 seconds
 Time taken for matching: 0.354
 
 
-== kmer_V2a.mtx | 16 cores ==
+== kmer_V2a.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.632 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
@@ -568,7 +568,7 @@ Sorting el for all G(V) takes 0.010 seconds
 Time taken for matching: 0.203
 
 
-== kmer_V2a.mtx | 32 cores ==
+== kmer_V2a.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.516 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
@@ -578,7 +578,7 @@ Sorting el for all G(V) takes 0.005 seconds
 Time taken for matching: 0.258
 
 
-== kmer_V2a.mtx | 64 cores ==
+== kmer_V2a.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.281 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
@@ -588,7 +588,7 @@ Sorting el for all G(V) takes 0.003 seconds
 Time taken for matching: 0.142
 
 
-== kmer_V2a.mtx | 128 cores ==
+== kmer_V2a.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.281 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/kmer_V2a.mtx
@@ -598,7 +598,7 @@ Sorting el for all G(V) takes 0.001 seconds
 Time taken for matching: 0.138
 
 
-== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 4 cores ==
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.948 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
@@ -608,7 +608,7 @@ Sorting el for all G(V) takes 0.010 seconds
 Time taken for matching: 0.383
 
 
-== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 8 cores ==
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.450 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
@@ -618,7 +618,7 @@ Sorting el for all G(V) takes 0.005 seconds
 Time taken for matching: 0.319
 
 
-== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 16 cores ==
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.253 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
@@ -628,7 +628,7 @@ Sorting el for all G(V) takes 0.002 seconds
 Time taken for matching: 0.261
 
 
-== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 32 cores ==
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.343 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
@@ -638,7 +638,7 @@ Sorting el for all G(V) takes 0.001 seconds
 Time taken for matching: 0.387
 
 
-== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 64 cores ==
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.249 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
@@ -648,7 +648,7 @@ Sorting el for all G(V) takes 0.001 seconds
 Time taken for matching: 0.465
 
 
-== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 128 cores ==
+== static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.369 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_1000000_nodes.mtx
@@ -658,7 +658,7 @@ Sorting el for all G(V) takes 0.000 seconds
 Time taken for matching: 0.521
 
 
-== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 4 cores ==
+== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 3.626 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
@@ -668,7 +668,7 @@ Sorting el for all G(V) takes 0.052 seconds
 Time taken for matching: 1.876
 
 
-== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 8 cores ==
+== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.644 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
@@ -678,7 +678,7 @@ Sorting el for all G(V) takes 0.028 seconds
 Time taken for matching: 1.151
 
 
-== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 16 cores ==
+== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.859 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
@@ -688,7 +688,7 @@ Sorting el for all G(V) takes 0.014 seconds
 Time taken for matching: 0.673
 
 
-== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 32 cores ==
+== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.664 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
@@ -698,7 +698,7 @@ Sorting el for all G(V) takes 0.007 seconds
 Time taken for matching: 0.583
 
 
-== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 64 cores ==
+== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.346 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
@@ -708,7 +708,7 @@ Sorting el for all G(V) takes 0.003 seconds
 Time taken for matching: 0.585
 
 
-== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 128 cores ==
+== static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.313 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_5000000_nodes.mtx
@@ -718,7 +718,7 @@ Sorting el for all G(V) takes 0.001 seconds
 Time taken for matching: 0.618
 
 
-== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 4 cores ==
+== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 12.494 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
@@ -728,7 +728,7 @@ Sorting el for all G(V) takes 0.218 seconds
 Time taken for matching: 8.799
 
 
-== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 8 cores ==
+== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 6.095 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
@@ -738,7 +738,7 @@ Sorting el for all G(V) takes 0.116 seconds
 Time taken for matching: 4.423
 
 
-== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 16 cores ==
+== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 3.237 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
@@ -748,7 +748,7 @@ Sorting el for all G(V) takes 0.058 seconds
 Time taken for matching: 2.193
 
 
-== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 32 cores ==
+== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.948 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
@@ -758,7 +758,7 @@ Sorting el for all G(V) takes 0.029 seconds
 Time taken for matching: 1.458
 
 
-== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 64 cores ==
+== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.052 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
@@ -768,7 +768,7 @@ Sorting el for all G(V) takes 0.014 seconds
 Time taken for matching: 0.976
 
 
-== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 128 cores ==
+== static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.733 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/static_highOverlap_lowBlockSizeVar_20000000_nodes.mtx
@@ -778,7 +778,7 @@ Sorting el for all G(V) takes 0.007 seconds
 Time taken for matching: 0.815
 
 
-== com-Orkut.mtx | 4 cores ==
+== com-Orkut.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 6.435 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
@@ -788,7 +788,7 @@ Sorting el for all G(V) takes 0.163 seconds
 Time taken for matching: 0.593
 
 
-== com-Orkut.mtx | 8 cores ==
+== com-Orkut.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 2.904 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
@@ -798,7 +798,7 @@ Sorting el for all G(V) takes 0.082 seconds
 Time taken for matching: 0.683
 
 
-== com-Orkut.mtx | 16 cores ==
+== com-Orkut.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.456 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
@@ -808,7 +808,7 @@ Sorting el for all G(V) takes 0.042 seconds
 Time taken for matching: 0.759
 
 
-== com-Orkut.mtx | 32 cores ==
+== com-Orkut.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.948 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
@@ -818,7 +818,7 @@ Sorting el for all G(V) takes 0.021 seconds
 Time taken for matching: 0.923
 
 
-== com-Orkut.mtx | 64 cores ==
+== com-Orkut.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 1.061 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
@@ -828,7 +828,7 @@ Sorting el for all G(V) takes 0.011 seconds
 Time taken for matching: 1.532
 
 
-== com-Orkut.mtx | 128 cores ==
+== com-Orkut.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 0.373 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Orkut.mtx
@@ -838,7 +838,7 @@ Sorting el for all G(V) takes 0.006 seconds
 Time taken for matching: 1.748
 
 
-== com-Friendster.mtx | 4 cores ==
+== com-Friendster.mtx | 4 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 60.998 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
@@ -848,7 +848,7 @@ Sorting el for all G(V) takes 2.701 seconds
 Time taken for matching: 8.368
 
 
-== com-Friendster.mtx | 8 cores ==
+== com-Friendster.mtx | 8 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 29.972 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
@@ -858,7 +858,7 @@ Sorting el for all G(V) takes 1.353 seconds
 Time taken for matching: 5.266
 
 
-== com-Friendster.mtx | 16 cores ==
+== com-Friendster.mtx | 16 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 15.165 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
@@ -868,7 +868,7 @@ Sorting el for all G(V) takes 0.671 seconds
 Time taken for matching: 3.525
 
 
-== com-Friendster.mtx | 32 cores ==
+== com-Friendster.mtx | 32 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 8.002 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
@@ -878,7 +878,7 @@ Sorting el for all G(V) takes 0.334 seconds
 Time taken for matching: 2.833
 
 
-== com-Friendster.mtx | 64 cores ==
+== com-Friendster.mtx | 64 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 4.846 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
@@ -888,7 +888,7 @@ Sorting el for all G(V) takes 0.165 seconds
 Time taken for matching: 4.217
 
 
-== com-Friendster.mtx | 128 cores ==
+== com-Friendster.mtx | 128 nodes ==
 Graph Matching 1/2-Approx Actor Version
 Reading file takes 3.291 seconds
 File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/com-Friendster.mtx
@@ -898,3 +898,159 @@ Sorting el for all G(V) takes 0.083 seconds
 Time taken for matching: 4.550
 
 
+== rgg_small.mtx | 4 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 184.699 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_small.mtx
+Number of Vertices: 536870912
+Number of Edges: 6643450680
+Sorting el for all G(V) takes 4.230 seconds
+Time taken for matching: 20.645
+
+
+== rgg_small.mtx | 8 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 83.392 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_small.mtx
+Number of Vertices: 536870912
+Number of Edges: 6643450680
+Sorting el for all G(V) takes 1.735 seconds
+Time taken for matching: 10.084
+
+
+== rgg_small.mtx | 16 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 42.368 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_small.mtx
+Number of Vertices: 536870912
+Number of Edges: 6643450680
+Sorting el for all G(V) takes 0.840 seconds
+Time taken for matching: 4.927
+
+
+== rgg_small.mtx | 32 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 17.406 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_small.mtx
+Number of Vertices: 536870912
+Number of Edges: 6643450680
+Sorting el for all G(V) takes 0.451 seconds
+Time taken for matching: 2.754
+
+
+== rgg_small.mtx | 64 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 13.781 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_small.mtx
+Number of Vertices: 536870912
+Number of Edges: 6643450680
+Sorting el for all G(V) takes 0.192 seconds
+Time taken for matching: 1.273
+
+
+== rgg_small.mtx | 128 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 7.856 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_small.mtx
+Number of Vertices: 536870912
+Number of Edges: 6643450680
+Sorting el for all G(V) takes 0.095 seconds
+Time taken for matching: 0.747
+
+
+== rgg_medium.mtx | 4 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 375.045 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_medium.mtx
+Number of Vertices: 1073741824
+Number of Edges: 13579379686
+slurmstepd: error: Detected 1 oom_kill event in StepId=935625.27. Some of the step tasks have been OOM Killed.
+
+
+== rgg_medium.mtx | 8 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 161.772 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_medium.mtx
+Number of Vertices: 1073741824
+Number of Edges: 13579379686
+Sorting el for all G(V) takes 3.671 seconds
+Time taken for matching: 21.543
+
+
+== rgg_medium.mtx | 16 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 84.538 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_medium.mtx
+Number of Vertices: 1073741824
+Number of Edges: 13579379686
+Sorting el for all G(V) takes 1.773 seconds
+Time taken for matching: 10.235
+
+
+== rgg_medium.mtx | 32 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 33.666 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_medium.mtx
+Number of Vertices: 1073741824
+Number of Edges: 13579379686
+Sorting el for all G(V) takes 0.852 seconds
+Time taken for matching: 5.564
+
+
+== rgg_medium.mtx | 64 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 27.475 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_medium.mtx
+Number of Vertices: 1073741824
+Number of Edges: 13579379686
+Sorting el for all G(V) takes 0.405 seconds
+Time taken for matching: 2.769
+
+
+== rgg_medium.mtx | 128 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 14.012 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_medium.mtx
+Number of Vertices: 1073741824
+Number of Edges: 13579379686
+Sorting el for all G(V) takes 0.198 seconds
+Time taken for matching: 1.461
+
+== rgg_big.mtx | 16 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 194.727 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_big.mtx
+Number of Vertices: 2147483648
+Number of Edges: 27566246252
+Sorting el for all G(V) takes 3.616 seconds
+Time taken for matching: 33.002
+
+
+== rgg_big.mtx | 32 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 193.466 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_big.mtx
+Number of Vertices: 2147483648
+Number of Edges: 27566246252
+Sorting el for all G(V) takes 1.783 seconds
+Time taken for matching: 11.342
+
+
+== rgg_big.mtx | 64 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 185.037 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_big.mtx
+Number of Vertices: 2147483648
+Number of Edges: 27566246252
+Sorting el for all G(V) takes 0.852 seconds
+Time taken for matching: 5.716
+
+
+== rgg_big.mtx | 128 nodes ==
+Graph Matching 1/2-Approx Actor Version
+Reading file takes 25.693 seconds
+File /storage/home/hcoda1/8/ssinghal74/scratch/mel-dataset/converted/rgg_big.mtx
+Number of Vertices: 2147483648
+Number of Edges: 27566246252
+Sorting el for all G(V) takes 0.408 seconds
+Time taken for matching: 2.921
