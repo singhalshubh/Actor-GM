@@ -20,6 +20,60 @@ Let the graph be G(V,E), and data structures used are status[1..|V|] and storage
 
 > For termination requirement of `hclib::Actors`, our implementation restricts [mb1] for ACCEPT and [mb2] for REJECT, since ACCEPT handlers can also produce new REJECT messages for storage of that matched vertex.
 
+## Directory Structure
+```
+.
+├── data 
+│   ├── karate.bin
+│   ├── karate.mtx
+│   ├── rmat10.bin
+│   ├── rmat10.mtx
+│   ├── rmat6.bin
+│   └── rmat6.mtx
+├── mel-patched (contains Mel rectified)
+│   ├── graph.hpp
+│   ├── main.cpp
+│   ├── Makefile
+│   ├── match.hpp
+│   ├── README.md
+│   ├── results.log
+│   ├── results_mel_original.log
+│   ├── run.sh
+│   └── utils.hpp
+├── README.md
+├── scripts (contains scripts for pre-processing datasets)
+│   ├── convert-to-mtx.py
+│   ├── convert-to-symmetric.py
+│   ├── data.out
+│   ├── data.sh
+│   ├── generate_rgg.cpp
+│   ├── Makefile
+│   ├── mtx_to_bin.cpp
+│   ├── rcm.py
+│   ├── README.md
+│   └── rgg_to_mtx.cpp
+├── setup.sh (contains all dataset related conversion commands)
+├── src (contains Actor-GM)
+│   ├── graph.h
+│   ├── main.cpp
+│   ├── Makefile
+│   ├── match.h
+│   ├── results_block.log
+│   ├── results_block_optimized.log
+│   ├── results.log
+│   ├── results_optimized.log
+│   ├── run_block_optimized.sh
+│   ├── run_block.sh
+│   ├── run_optimized.sh
+│   ├── run.sh
+│   └── verify.h
+└── test (contains format checking of input file)
+    └── graph
+        └── checkFormat.py
+
+6 directories, 41 files
+```
+
 ## Build
 Install hclib library (`hclib::Actors`) from [hclib-actor.com](https://hclib-actor.com)
 
