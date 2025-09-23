@@ -56,7 +56,3 @@ source run.sh &> results.log
 
 ### Mel Results
 You can download the `mel` repository at the aforementioned link. Then add `-DUSE_MPI_RMA` to `OPTFLAGS` and do `make`. The results for the `RMA` version is stored in `mel-patched/results_mel_original.log`, run upto 128 nodes, 16 ppn and 12GB memory per cpu (in exclusive mode).
-
-## Authors
-Shubhendra Pal Singhal (ssinghal74@gatech.edu)
-Habanero Labs, Georgia Institute of Technology, USA
